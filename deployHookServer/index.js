@@ -35,7 +35,7 @@ app.post('/servicehook', function(req, res, next) {
 
 
 
-console.log(req.body);
+console.log(req.body.refs);
 
       process.exit();
     })
