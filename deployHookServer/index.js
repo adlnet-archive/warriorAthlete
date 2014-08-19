@@ -9,13 +9,14 @@ var app = express();
 var server = app.listen(3000);
 
 
-
 app.use(express.static(__dirname + '/public'));
-//  app.use(require('body-parser'));
+app.use(require('body-parser'));
 //  app.use(require('method-override'));
-app.get('/servicehook', function(req, res, next) {
+app.post('/servicehook', function(req, res, next) {
   console.log('hook was hit');
   res.status(200).end();
+
+  console.log(req.body);
 
   child_process.execFile('git', ['reset','--hard'],{cwd:__dirname + '/../'}, function(e,s,o) {
     console.log(e);
@@ -25,6 +26,17 @@ app.get('/servicehook', function(req, res, next) {
       console.log(e);
       console.log(s);
       console.log(o);
+
+
+
+
+
+//shadlentrixt
+
+
+
+
+
       process.exit();
     })
   })
