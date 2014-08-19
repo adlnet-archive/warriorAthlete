@@ -1,0 +1,14 @@
+{
+  "name": "deployHookServer",
+  "version": "0.0.0",
+  "description": "Server to deploy edx work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rob C",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.8.5"
+  }
+}
