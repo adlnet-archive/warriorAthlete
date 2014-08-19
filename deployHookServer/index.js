@@ -16,7 +16,7 @@ app.post('/servicehook', function(req, res, next) {
   console.log('hook was hit');
   res.status(200).end();
 
-  console.log(req.body);
+  
 
   child_process.execFile('git', ['reset','--hard'],{cwd:__dirname + '/../'}, function(e,s,o) {
      console.log(e);
@@ -35,7 +35,7 @@ app.post('/servicehook', function(req, res, next) {
 
 
 
-
+console.log(req.body);
 
       process.exit();
     })
