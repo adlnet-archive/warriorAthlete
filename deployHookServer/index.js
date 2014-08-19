@@ -19,7 +19,7 @@ app.post('/servicehook', function(req, res, next) {
   console.log(req.body);
 
   child_process.execFile('git', ['reset','--hard'],{cwd:__dirname + '/../'}, function(e,s,o) {
-    console.log(e);
+     console.log(e);
     console.log(s);
     console.log(o);
     child_process.execFile('git', 'pull', function(e,s,o) {
