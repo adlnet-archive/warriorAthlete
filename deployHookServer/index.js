@@ -10,7 +10,7 @@ var server = app.listen(3000);
 
 
 app.use(express.static(__dirname + '/public'));
-app.use(require('body-parser'));
+app.use(require('body-parser').json());
 //  app.use(require('method-override'));
 app.post('/servicehook', function(req, res, next) {
   console.log('hook was hit');
