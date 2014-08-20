@@ -53,6 +53,7 @@ app.post('/servicehook', function(req, res, next) {
                 })
 
             },
+
             function(cb) {
                 child_process.execFile('git', ['status'], {
                     cwd: __dirname + '/../'
