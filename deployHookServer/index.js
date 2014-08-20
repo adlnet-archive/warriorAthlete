@@ -20,7 +20,7 @@ function deploy(req, res, next) {
     async.series([
 
             //first, lets reset the entire git repo
-            function(cb) {
+            /*      function(cb) {
                 child_process.execFile('git', ['reset', '--hard'], {
                     cwd: __dirname + '/../'
                 }, function(e, s, o) {
@@ -29,7 +29,7 @@ function deploy(req, res, next) {
                     console.log(o);
                     cb();
                 })
-            },
+            },*/
             //now, 
             function(cb) {
                 child_process.execFile('git', ['pull'], {
@@ -38,6 +38,7 @@ function deploy(req, res, next) {
                     console.log(e);
                     console.log(s);
                     console.log(o);
+                    res.status(200).write(s);
                     cb();
                 })
 
@@ -52,6 +53,7 @@ function deploy(req, res, next) {
                     console.log(e);
                     console.log(s);
                     console.log(o);
+                    res.write(s);
                     cb();
                 })
 
@@ -64,7 +66,7 @@ function deploy(req, res, next) {
                     console.log(e);
                     console.log(s);
                     console.log(o);
-                    res.status(200).send(s);
+                    res.write(s);
                     cb();
 
                 })
@@ -73,10 +75,12 @@ function deploy(req, res, next) {
         ],
         function() {
             console.log(req.body.ref);
+            res.end();
+            next();
             process.exit();
         });
     //shadlentrixt
-    next();
+
 }
 
 app.post('/servicehook', deploy);
