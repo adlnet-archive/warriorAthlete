@@ -62,7 +62,7 @@ app.post('/servicehook', function(req, res, next) {
                     console.log(e);
                     console.log(s);
                     console.log(o);
-                    res.status(200).write(s).end();
+                    res.status(200).write(s);
                     cb();
 
                 })
