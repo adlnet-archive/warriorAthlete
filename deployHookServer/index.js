@@ -23,6 +23,8 @@ function deploy(req, res, next) {
     async.series([
 
             //first, lets reset the entire git repo
+            //currently not  doing this, so local changes on the server will not be 
+            //overwritten
             /*      function(cb) {
                 child_process.execFile('git', ['reset', '--hard'], {
                     cwd: __dirname + '/../'
@@ -33,7 +35,7 @@ function deploy(req, res, next) {
                     cb();
                 })
             },*/
-            //now, 
+            //now, we pull new est version of the software
             function(cb) {
                 child_process.execFile('git', ['pull'], {
                     cwd: __dirname + '/../'
@@ -51,8 +53,7 @@ function deploy(req, res, next) {
 
             },
 
-
-            //now,  
+            //now, lets update this sync server itself and it's dependant modules
             function(cb) {
                 child_process.execFile('npm', ['install'], {
                     cwd: __dirname + ''
@@ -69,6 +70,7 @@ function deploy(req, res, next) {
 
             },
 
+            //check the status and send in the response
             function(cb) {
                 child_process.execFile('git', ['status'], {
                     cwd: __dirname + '/../'
@@ -85,6 +87,8 @@ function deploy(req, res, next) {
                 })
 
             },
+
+            //check the log to make sure that the final commit is the right one
             function(cb) {
                 child_process.execFile('git', ['log', '-n', '1'], {
                     cwd: __dirname + '/../'
@@ -101,6 +105,8 @@ function deploy(req, res, next) {
                 })
 
             },
+
+            //copy the files from the directory to the server's directory
             function(cb) {
 
                 res.write("\r\n### copy files ###\r\n");
