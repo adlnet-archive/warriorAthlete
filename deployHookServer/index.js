@@ -5,6 +5,9 @@ var express = require('express'),
     http = require('http'),
     child_process = require('child_process'),
     async = require('async');
+var walk = require('fs-walk');
+var fs = require('fs-extra');
+var path = require('path');
 
 var app = express();
 var server = app.listen(3000);
@@ -97,6 +100,31 @@ function deploy(req, res, next) {
 
                 })
 
+            },
+            function(cb) {
+
+                res.write("\r\n### copy files ###\r\n");
+                var walkdir = path.resolve(path.join(__dirname + '/../edx'));
+                res.write("\r\n### " + walkdir + " ###\r\n");
+                walk.walk(walkdir,
+                    function(basedir, filename, stat, next) {
+
+                        var fromfile = path.join(basedir, filename);
+                        res.write('copy ' + fromfile + "\r\n");
+                        var tofile = path.resolve(path.join(basedir, filename));
+                        tofile = tofile.substr(walkdir.length);
+                        tofile = path.join('/edx/app/edxapp/edx-platform', tofile)
+                        res.write('to ' + tofile + "\r\n");
+                        fs.copy(fromfile, tofile, function(err) {
+                            if (err)
+                                res.write(JSON.stringify(err) + "\r\n");
+                            next();
+                        })
+
+                    },
+                    function() {
+                        cb()
+                    });
             }
         ],
         function() {
