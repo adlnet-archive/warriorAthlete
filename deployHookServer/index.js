@@ -13,7 +13,8 @@ var server = app.listen(3000);
 app.use(express.static(__dirname + '/public'));
 app.use(require('body-parser').json());
 //  app.use(require('method-override'));
-app.post('/servicehook', function(req, res, next) {
+
+function deploy(req, res, next) {
     console.log('hook was hit');
 
     async.series([
@@ -76,7 +77,10 @@ app.post('/servicehook', function(req, res, next) {
         });
     //shadlentrixt
     next();
-});
+}
+
+app.post('/servicehook', deploy);
+app.get('/servicehook', deploy);
 
 
 console.log("Express server listening on port 3000");
