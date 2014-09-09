@@ -1,0 +1,11 @@
+<problem display_name="Multiple Choice" markdown="The changes to the US Army PT were made to better prepare soldiers for full spectrum operations and a total soldier concept. True or False?&#10;( ) False&#10;(x) True&#10;&#10;&#10;">
+<p>The changes to the US Army PT were made to better prepare soldiers for full spectrum operations and a total soldier concept. True or False?</p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="false">False</choice>
+    <choice correct="true">True</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+
+</problem>
