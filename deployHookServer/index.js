@@ -131,6 +131,17 @@ function deploy(req, res, next) {
                     function() {
                         cb()
                     });
+            },
+            function(cb)
+            {
+                 child_process.execFile('sudo', ['wa-pull.sh'], {
+                    cwd:  '/warriorAthlete'
+                }, function(e, s, o) {
+                    console.log(e);
+                    console.log(s);
+                    console.log(o);
+                    cb();
+                })
             }
         ],
         function() {
