@@ -1,0 +1,32 @@
+---
+metadata:
+    display_name: Sandbox World
+    markdown: !!null
+data: |
+      <problem display_name="Nutrition Mission">
+      <script type="loncapa/python">
+      <![CDATA[
+      import json
+      def vglcfn(e, ans):
+        
+        par = json.loads(ans)
+       
+        answer = json.loads(par["answer"]);
+        return answer["Box"]
+       
+      ]]>
+      </script>
+      <p>
+      Create A Box and name it 'EDX'
+      </p>
+      <customresponse cfn="vglcfn">
+        <jsinput gradefn="WebGLDemo.getGrade"
+          get_statefn="WebGLDemo.getState"
+          set_statefn="WebGLDemo.setState"
+          initial_state='{}'
+          width="800"
+          height="600"
+          html_file="http://ec2-54-88-206-34.compute-1.amazonaws.com:3000/adl/sandbox/Gk3WMXRg4pgROLZ1"
+          sop="false"/>
+      </customresponse>
+      </problem>
