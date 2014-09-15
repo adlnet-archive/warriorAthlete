@@ -1,18 +1,22 @@
-<problem display_name="Quiz question 1" markdown="&gt;&gt;Which of the following statements is correct in regards to conditioning drills?&lt;&lt;&#10;&#10;     ( ) Soldiers should perform no more than 10 repetitions of each exercise.&#10;     ( ) conditioning drills do not have to be performed in any particular order.&#10;     (x) For the most efficient instruction, the ideal size is one platoon.&#10;     ( ) Speed should never be sacrificed for precise execution.&#10;     &#10;[explanation]&#10;For the most efficient instruction, the ideal unit size is one platoon. Larger units up to a battalion can&#10;successfully perform these drills if properly taught and mastered at the small unit level.&#10;[explanation]">
-  <p>Which of the following statements is correct in regards to conditioning drills?</p>
-  <multiplechoiceresponse>
-    <choicegroup label="Which of the following statements is correct in regards to conditioning drills?" type="MultipleChoice">
-      <choice correct="false">Soldiers should perform no more than 10 repetitions of each exercise.</choice>
-      <choice correct="false">conditioning drills do not have to be performed in any particular order.</choice>
-      <choice correct="true">For the most efficient instruction, the ideal size is one platoon.</choice>
-      <choice correct="false">Speed should never be sacrificed for precise execution.</choice>
-    </choicegroup>
-  </multiplechoiceresponse>
-  <solution>
-    <div class="detailed-solution">
-      <p>Explanation</p>
-      <p>For the most efficient instruction, the ideal unit size is one platoon. Larger units up to a battalion can</p>
-      <p>successfully perform these drills if properly taught and mastered at the small unit level.</p>
-    </div>
-  </solution>
+<problem display_name="Quiz" markdown="&gt;&gt;Which of the following statements is correct in regards to conditioning drills?&lt;&lt;&#10;&#10;     ( ) Soldiers should perform no more than 10 repetitions of each exercise.&#10;     ( ) conditioning drills do not have to be performed in any particular order.&#10;     (x) For the most efficient instruction, the ideal size is one platoon.&#10;     ( ) Speed should never be sacrificed for precise execution.&#10;     &#10;[explanation]&#10;For the most efficient instruction, the ideal unit size is one platoon. Larger units up to a battalion can&#10;successfully perform these drills if properly taught and mastered at the small unit level.&#10;[explanation]">
+<p>Which of the following statements is correct in regards to conditioning drills?</p>
+<multiplechoiceresponse>
+  <choicegroup label="Which of the following statements is correct in regards to conditioning drills?" type="MultipleChoice">
+    <choice correct="false">Soldiers should perform no more than 10 repetitions of each exercise.</choice>
+    <choice correct="false">conditioning drills do not have to be performed in any particular order.</choice>
+    <choice correct="true">For the most efficient instruction, the ideal size is one platoon.</choice>
+    <choice correct="false">Speed should never be sacrificed for precise execution.</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+     
+<solution>
+<div class="detailed-solution">
+<p>Explanation</p>
+
+<p>For the most efficient instruction, the ideal unit size is one platoon. Larger units up to a battalion can</p>
+<p>successfully perform these drills if properly taught and mastered at the small unit level.</p>
+
+</div>
+</solution>
 </problem>
