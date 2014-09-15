@@ -1,22 +1,16 @@
 <problem display_name="Quiz question 3" markdown="&gt;&gt;30:60s and 60:120s allow Soldiers to be able to sustain performance of physically demanding tasks at a&lt;&lt;&#10;( ) greater resistance to fatigue over a shorter duration&#10;( ) lower intensity for a shorter duration&#10;(x) higher intensity for a longer duration&#10;     &#10;[explanation]&#10;higher intensity for a longer duration&#10;[explanation]&#10;&#10;">
-<p>30:60s and 60:120s allow Soldiers to be able to sustain performance of physically demanding tasks at a</p>
-<multiplechoiceresponse>
-  <choicegroup label="30:60s and 60:120s allow Soldiers to be able to sustain performance of physically demanding tasks at a" type="MultipleChoice">
-    <choice correct="false">greater resistance to fatigue over a shorter duration</choice>
-    <choice correct="false">lower intensity for a shorter duration</choice>
-    <choice correct="true">higher intensity for a longer duration</choice>
-  </choicegroup>
-</multiplechoiceresponse>
-
-     
-<solution>
-<div class="detailed-solution">
-<p>Explanation</p>
-
-<p>higher intensity for a longer duration</p>
-
-</div>
-</solution>
-
-
+  <p>30:60s and 60:120s allow Soldiers to be able to sustain performance of physically demanding tasks at a</p>
+  <multiplechoiceresponse>
+    <choicegroup label="30:60s and 60:120s allow Soldiers to be able to sustain performance of physically demanding tasks at a" type="MultipleChoice">
+      <choice correct="false">greater resistance to fatigue over a shorter duration</choice>
+      <choice correct="false">lower intensity for a shorter duration</choice>
+      <choice correct="true">higher intensity for a longer duration</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>higher intensity for a longer duration</p>
+    </div>
+  </solution>
 </problem>

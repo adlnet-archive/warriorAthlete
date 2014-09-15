@@ -1,22 +1,18 @@
 <problem display_name="Quiz question 2" markdown="Which of the following are body segments trained in the conduct of a Power Jump?&#10;[x] hips&#10;[ ] chest&#10;[x] shoulders&#10;[ ] arms&#10;[x] back&#10;&#10;[explanation]&#10;Hips, thighs, lower legs, back, trunk, and shoulders are the body segments trained in the conduct of a Power Jump.&#10;[explanation]&#10;">
-<p>Which of the following are body segments trained in the conduct of a Power Jump?</p>
-<choiceresponse>
-  <checkboxgroup direction="vertical">
-    <choice correct="true">hips</choice>
-    <choice correct="false">chest</choice>
-    <choice correct="true">shoulders</choice>
-    <choice correct="false">arms</choice>
-    <choice correct="true">back</choice>
-  </checkboxgroup>
-</choiceresponse>
-
-<solution>
-<div class="detailed-solution">
-<p>Explanation</p>
-
-<p>Hips, thighs, lower legs, back, trunk, and shoulders are the body segments trained in the conduct of a Power Jump.</p>
-
-</div>
-</solution>
-
+  <p>Which of the following are body segments trained in the conduct of a Power Jump?</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true">hips</choice>
+      <choice correct="false">chest</choice>
+      <choice correct="true">shoulders</choice>
+      <choice correct="false">arms</choice>
+      <choice correct="true">back</choice>
+    </checkboxgroup>
+  </choiceresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>Hips, thighs, lower legs, back, trunk, and shoulders are the body segments trained in the conduct of a Power Jump.</p>
+    </div>
+  </solution>
 </problem>
