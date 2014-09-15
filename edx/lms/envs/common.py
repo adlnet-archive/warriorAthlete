@@ -263,7 +263,7 @@ FEATURES = {
     # Analytics Data API (for active student count)
     # Default to false here b/c dev environments won't have the api, will override in aws.py
     'ENABLE_ANALYTICS_ACTIVE_COUNT': False,
-
+    'ALLOW_ALL_ADVANCED_COMPONENTS': True,
 }
 
 # Ignore static asset files on import which match this pattern
