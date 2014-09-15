@@ -1,0 +1,91 @@
+---
+metadata:
+    display_name: Sandbox World
+    markdown: !!null
+data: |
+      <problem display_name="Nutrition Mission">
+      <script type="loncapa/python">
+      <![CDATA[
+      import json
+      def vglcfn(e, ans):
+        
+        par = json.loads(ans)
+       
+        answer = json.loads(par["answer"]);
+        return answer["Box"]
+       
+      ]]>
+      </script>
+      <script type="text/javascript">
+
+      $('iframe').css('height','500');
+      $('iframe').css('width','700');
+      $('iframe').css('border','10px solid white');
+      $('iframe').css('box-shadow','0px 0px 80px gray');
+     
+
+      var opened = false;
+      var _to = null;
+      $('iframe').mouseover(function()
+      {
+
+         if(_to)
+                {
+                  window.clearTimeout(_to);
+                  _to=null;
+                }
+                
+            _to = window.setTimeout(function(){
+
+                $('iframe').css('top','15%')
+                $('iframe').css('left','15%')
+                $('iframe').css('width','70%')
+                $('iframe').css('height','70%')
+                $('iframe').css('position','fixed');
+                $('iframe').css('z-index','10000');
+                $('iframe').css('box-shadow','0px 0px 180px gray');
+
+              },1500);
+              
+            
+      });
+      $('iframe').mouseout(function()
+      {
+                if(_to)
+                {
+                  window.clearTimeout(_to);
+                  _to=null;
+                }
+
+                _to = window.setTimeout(function(){
+
+                $('iframe').css('top','')
+                $('iframe').css('left','')
+                $('iframe').css('height','500');
+                $('iframe').css('width','700');
+                $('iframe').css('position','');
+                $('iframe').css('z-index','');
+                $('iframe').css('box-shadow','0px 0px 80px gray');
+
+              },1500);
+
+               
+                
+              
+      });
+      
+      </script> 
+      <p>
+      Create A Box and name it 'EDX'
+      </p>
+      <customresponse cfn="vglcfn">
+        <jsinput gradefn="WebGLDemo.getGrade"
+          get_statefn="WebGLDemo.getState"
+          set_statefn="WebGLDemo.setState"
+          initial_state='{}'
+          width="800"
+          height="600"
+          html_file="http://ec2-54-88-206-34.compute-1.amazonaws.com:3000/adl/sandbox/Gk3WMXRg4pgROLZ1"
+          sop="false"/>
+      </customresponse>
+      </problem>
