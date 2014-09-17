@@ -106,7 +106,7 @@ data: |
       
       </script> 
       <p>
-      Create A Box and name it 'EDX'
+      Complete the Nutrition Mission Game.
       </p>
       <customresponse cfn="vglcfn">
         <jsinput gradefn="WebGLDemo.getGrade"
