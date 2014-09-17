@@ -1,0 +1,14 @@
+<problem display_name="" markdown="You should hold your stretch for between 15 and 30 seconds every time you stretch.&#10;(x) True&#10;( ) False&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;   &#10;&#10;&#10;&#10;&#10;">
+<p>You should hold your stretch for between 15 and 30 seconds every time you stretch.</p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="true">True</choice>
+    <choice correct="false">False</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+<p>   </p>
+
+
+
+</problem>

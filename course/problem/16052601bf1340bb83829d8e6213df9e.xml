@@ -1,0 +1,11 @@
+<problem display_name="" markdown="Most healthy adults do not need vitamin or mineral supplements if they eat a proper variety of foods.  &#10;(x) True&#10;( ) False&#10;&#10;&#10;&#10;&#10;">
+<p>Most healthy adults do not need vitamin or mineral supplements if they eat a proper variety of foods.  </p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="true">True</choice>
+    <choice correct="false">False</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+
+</problem>

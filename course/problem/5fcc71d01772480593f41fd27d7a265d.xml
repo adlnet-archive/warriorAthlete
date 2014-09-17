@@ -1,0 +1,15 @@
+<problem display_name="" markdown="If you are a 30 year old, what is your optimal max heart rate (HRmax)?&#10;(x) 190 bpm&#10;( ) 200 bpm&#10;( ) 175 bpm&#10;&#10;&#10;&#10;&#10;&#10;&#10;   &#10;&#10;&#10;&#10;&#10;">
+<p>If you are a 30 year old, what is your optimal max heart rate (HRmax)?</p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="true">190 bpm</choice>
+    <choice correct="false">200 bpm</choice>
+    <choice correct="false">175 bpm</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+<p>   </p>
+
+
+
+</problem>

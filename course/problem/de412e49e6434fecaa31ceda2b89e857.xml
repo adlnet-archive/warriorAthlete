@@ -1,0 +1,12 @@
+<problem display_name="" markdown="Dumbell &quot;T&quot; Push-up exercise targets which muscles?&#10;(x) Triceps Brachii, Erector Spinae, Deltoids, Bicep Brachii, Pectorals Major, Rectus Abdominus&#10;( ) Gluteus Medius, Gluteus Minimus, Deltoids, Bicep Brachii, Pectorals Major&#10;( ) Pectorals Major, Rectus Abdominus, Adductor Brevis, Adductor Longus&#10;&#10;&#10;">
+<p>Dumbell "T" Push-up exercise targets which muscles?</p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="true">Triceps Brachii, Erector Spinae, Deltoids, Bicep Brachii, Pectorals Major, Rectus Abdominus</choice>
+    <choice correct="false">Gluteus Medius, Gluteus Minimus, Deltoids, Bicep Brachii, Pectorals Major</choice>
+    <choice correct="false">Pectorals Major, Rectus Abdominus, Adductor Brevis, Adductor Longus</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+
+</problem>

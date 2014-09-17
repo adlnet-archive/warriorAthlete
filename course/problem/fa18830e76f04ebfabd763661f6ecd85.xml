@@ -1,0 +1,15 @@
+<problem display_name="" markdown="Who is responsible for training individuals, crews, and small teams?&#10;( ) Colonels &#10;( ) Sergeants&#10;(x) NCOs&#10;&#10;   &#10;&#10;&#10;&#10;&#10;">
+<p>Who is responsible for training individuals, crews, and small teams?</p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="false">Colonels </choice>
+    <choice correct="false">Sergeants</choice>
+    <choice correct="true">NCOs</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+<p>   </p>
+
+
+
+</problem>

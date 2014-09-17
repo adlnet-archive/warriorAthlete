@@ -1,0 +1,15 @@
+<problem display_name="" markdown="The Army ARFORGEN model consists of which phases?&#10;(x) Reset, Train/Ready, Available &#10;( ) Rest, Train, Deploy&#10;( ) Regroup, Retrain, Redeploy&#10;&#10;&#10;   &#10;&#10;&#10;&#10;&#10;">
+<p>The Army ARFORGEN model consists of which phases?</p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="true">Reset, Train/Ready, Available </choice>
+    <choice correct="false">Rest, Train, Deploy</choice>
+    <choice correct="false">Regroup, Retrain, Redeploy</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+<p>   </p>
+
+
+
+</problem>

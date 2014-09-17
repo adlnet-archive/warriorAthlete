@@ -1,0 +1,12 @@
+<problem display_name="" markdown="What are 30:60s and 60:120s?&#10; ( ) Number of men in the exercise group&#10; ( ) Number of minutes to run&#10; (x) Sprint and recovery times&#10;">
+<p>What are 30:60s and 60:120s?</p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="false">Number of men in the exercise group</choice>
+    <choice correct="false">Number of minutes to run</choice>
+    <choice correct="true">Sprint and recovery times</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+
+</problem>

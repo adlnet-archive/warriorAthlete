@@ -1,0 +1,11 @@
+<problem display_name="" markdown="As the athletes get closer to competition they decrease intake of carbohydrates.&#10;( ) True&#10;(x) False&#10;&#10;&#10;">
+<p>As the athletes get closer to competition they decrease intake of carbohydrates.</p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="false">True</choice>
+    <choice correct="true">False</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+
+</problem>

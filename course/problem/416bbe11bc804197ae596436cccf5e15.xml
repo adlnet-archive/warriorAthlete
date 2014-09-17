@@ -1,0 +1,13 @@
+<problem display_name="" markdown="Conditioning Drill 1 consists of which of the following?  &#10;(x) Basic and intermediate callisthenic exercises&#10;( ) Intermediate and advanced callisthenic exercises&#10;( ) Advanced callisthenic and plyometric exercise&#10;on.&#10;">
+<p>Conditioning Drill 1 consists of which of the following?  </p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="true">Basic and intermediate callisthenic exercises</choice>
+    <choice correct="false">Intermediate and advanced callisthenic exercises</choice>
+    <choice correct="false">Advanced callisthenic and plyometric exercise</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+<p>on.</p>
+
+</problem>
