@@ -1,26 +1,22 @@
 <problem display_name="" markdown="Which of the following are correct statements regarding a Terrain Run?&#10;[x] Terrain running is designed to be conducted with small unit integrity, best performed by squads and sections.&#10;[ ] Distances should generally be 5 miles for densely wooded areas and up to 10 miles on tank trails and open fields.&#10;[ ] Intensity is not relative to the terrain. Equal intensity should be maintained for all types of terrain.&#10;[x] Soldiers should perform terrain running in ACUs and well-fitting boots.&#10;[x] Soldiers may progress to performing terrain running with IBA, ACH, individual weapon, and under fighting load.&#10;&#10;[explanation]&#10;Terrain running is designed to be conducted with small unit integrity. &#10;Distances should generally be 1 mile for densely wooded areas and up to 2 miles on tank trails and open fields. &#10;Intensity is relative to the terrain. &#10;Soldiers should perform terrain running in ACUs and well-fitting boots. &#10;Soldiers may progress to performing terrain running with IBA, ACH, individual weapon, and under fighting load.&#10;[explanation]&#10;">
-<p>Which of the following are correct statements regarding a Terrain Run?</p>
-<choiceresponse>
-  <checkboxgroup direction="vertical">
-    <choice correct="true">Terrain running is designed to be conducted with small unit integrity, best performed by squads and sections.</choice>
-    <choice correct="false">Distances should generally be 5 miles for densely wooded areas and up to 10 miles on tank trails and open fields.</choice>
-    <choice correct="false">Intensity is not relative to the terrain. Equal intensity should be maintained for all types of terrain.</choice>
-    <choice correct="true">Soldiers should perform terrain running in ACUs and well-fitting boots.</choice>
-    <choice correct="true">Soldiers may progress to performing terrain running with IBA, ACH, individual weapon, and under fighting load.</choice>
-  </checkboxgroup>
-</choiceresponse>
-
-<solution>
-<div class="detailed-solution">
-<p>Explanation</p>
-
-<p>Terrain running is designed to be conducted with small unit integrity. </p>
-<p>Distances should generally be 1 mile for densely wooded areas and up to 2 miles on tank trails and open fields. </p>
-<p>Intensity is relative to the terrain. </p>
-<p>Soldiers should perform terrain running in ACUs and well-fitting boots. </p>
-<p>Soldiers may progress to performing terrain running with IBA, ACH, individual weapon, and under fighting load.</p>
-
-</div>
-</solution>
-
+  <p>Which of the following are correct statements regarding a Terrain Run?</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true">Terrain running is designed to be conducted with small unit integrity, best performed by squads and sections.</choice>
+      <choice correct="false">Distances should generally be 5 miles for densely wooded areas and up to 10 miles on tank trails and open fields.</choice>
+      <choice correct="false">Intensity is not relative to the terrain. Equal intensity should be maintained for all types of terrain.</choice>
+      <choice correct="true">Soldiers should perform terrain running in ACUs and well-fitting boots.</choice>
+      <choice correct="true">Soldiers may progress to performing terrain running with IBA, ACH, individual weapon, and under fighting load.</choice>
+    </checkboxgroup>
+  </choiceresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>Terrain running is designed to be conducted with small unit integrity. </p>
+      <p>Distances should generally be 1 mile for densely wooded areas and up to 2 miles on tank trails and open fields. </p>
+      <p>Intensity is relative to the terrain. </p>
+      <p>Soldiers should perform terrain running in ACUs and well-fitting boots. </p>
+      <p>Soldiers may progress to performing terrain running with IBA, ACH, individual weapon, and under fighting load.</p>
+    </div>
+  </solution>
 </problem>

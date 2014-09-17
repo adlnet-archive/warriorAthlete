@@ -1,0 +1,8 @@
+<problem display_name="" markdown="null" showanswer="never" weight="0.0">
+  <p id="have_read">Please verify that you have completed this activity.</p>
+  <choiceresponse>
+    <checkboxgroup label="Yes, I have watched this video." direction="vertical">
+      <choice correct="true">Yes, I have watched this video.</choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>
