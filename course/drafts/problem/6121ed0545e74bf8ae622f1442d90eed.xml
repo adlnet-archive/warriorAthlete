@@ -1,0 +1,12 @@
+<problem display_name="" markdown="Which of the following are among the seven principles of the Army's approach to physical readiness training (ADP 7-0)?&#10;[x] Train to standard&#10;[ ] Train for alertness&#10;[x] Train to sustain&#10;[ ] Train with equipment&#10;[x] Train to Develop Agile Leaders and Organizations&#10;&#10;&#10;&#10;&#10;">
+  <p>Which of the following are among the seven principles of the Army's approach to physical readiness training (ADP 7-0)?</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true">Train to standard</choice>
+      <choice correct="false">Train for alertness</choice>
+      <choice correct="true">Train to sustain</choice>
+      <choice correct="false">Train with equipment</choice>
+      <choice correct="true">Train to Develop Agile Leaders and Organizations</choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>
