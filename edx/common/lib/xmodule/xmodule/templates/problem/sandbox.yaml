@@ -12,7 +12,19 @@ data: |
         par = json.loads(ans)
         
         answer = json.loads(par["answer"]);
-        return answer["fat"] < 20;
+        fat = answer["fat"];
+        calories = answer["calories"];
+        protein = answer["protein"];
+        carbs = answer["carbs"];
+
+        totalGrams = carbs + fat + protein;
+        carbs_p = carbs / totalGrams;
+        fat_p = fat / totalGrams;
+        protein_p = protein / totalGrams;
+        
+        return (calories < 800 && calories > 500 && fat_p > .05 && fat_p < .25 && carbs_p > .3 && carbs_p < .5 && protein_p > .35 && protein_p < .55)
+
+      
        
       ]]>
       </script>
