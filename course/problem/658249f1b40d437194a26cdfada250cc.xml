@@ -1,12 +1,10 @@
 <problem display_name="Duplicate of ''" markdown="How many reps should you perform during the Sustaining Phases of Conditioning and Climbing Drills?&#10; ( ) 1-5&#10; (x) 5-10&#10; ( ) 10-25">
-<p>How many reps should you perform during the Sustaining Phases of Conditioning and Climbing Drills?</p>
-<multiplechoiceresponse>
-  <choicegroup type="MultipleChoice">
-    <choice correct="false">1-5</choice>
-    <choice correct="true">5-10</choice>
-    <choice correct="false">10-25</choice>
-  </choicegroup>
-</multiplechoiceresponse>
-
-
+  <p>How many reps should you perform during the Sustaining Phases of Conditioning and Climbing Drills?</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">1-5</choice>
+      <choice correct="true">5-10</choice>
+      <choice correct="false">10-25</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
 </problem>
