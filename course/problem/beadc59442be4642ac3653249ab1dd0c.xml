@@ -1,11 +1,9 @@
 <problem display_name="" markdown="The traditional distance for a run such as a 2-miler is 400 meter intervals or one lap around a quarter mile track. &#10;(x) True&#10;( ) False&#10;&#10;">
-<p>The traditional distance for a run such as a 2-miler is 400 meter intervals or one lap around a quarter mile track. </p>
-<multiplechoiceresponse>
-  <choicegroup type="MultipleChoice">
-    <choice correct="true">True</choice>
-    <choice correct="false">False</choice>
-  </choicegroup>
-</multiplechoiceresponse>
-
-
+  <p>The traditional distance for a run such as a 2-miler is 400 meter intervals or one lap around a quarter mile track. </p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">True</choice>
+      <choice correct="false">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
 </problem>

@@ -1,11 +1,9 @@
 <problem display_name="" markdown="The 500-Yard Shuttle Run is an example of Anaerobic Endurance Training.&#10;( ) True&#10;(x) False&#10;&#10;">
-<p>The 500-Yard Shuttle Run is an example of Anaerobic Endurance Training.</p>
-<multiplechoiceresponse>
-  <choicegroup type="MultipleChoice">
-    <choice correct="false">True</choice>
-    <choice correct="true">False</choice>
-  </choicegroup>
-</multiplechoiceresponse>
-
-
+  <p>The 500-Yard Shuttle Run is an example of Anaerobic Endurance Training.</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">True</choice>
+      <choice correct="true">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
 </problem>
