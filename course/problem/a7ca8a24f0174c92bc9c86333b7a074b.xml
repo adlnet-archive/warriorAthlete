@@ -1,12 +1,10 @@
 <problem display_name="" markdown="One pound of fat equals?&#10;( ) 5,000 calories&#10;(x) 3,500 calories&#10;( ) 2,000 calories&#10;&#10;&#10;&#10;&#10;&#10;">
-<p>One pound of fat equals?</p>
-<multiplechoiceresponse>
-  <choicegroup type="MultipleChoice">
-    <choice correct="false">5,000 calories</choice>
-    <choice correct="true">3,500 calories</choice>
-    <choice correct="false">2,000 calories</choice>
-  </choicegroup>
-</multiplechoiceresponse>
-
-
+  <p>One pound of fat equals?</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">5,000 calories</choice>
+      <choice correct="true">3,500 calories</choice>
+      <choice correct="false">2,000 calories</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
 </problem>
