@@ -1,4 +1,4 @@
-<problem display_name="" markdown="null" showanswer="never" weight="0.0">
+<problem display_name="Confirm Participation" markdown="null" showanswer="never" weight="0.0">
   <p id="have_read">Please verify that you have completed this activity.</p>
   <choiceresponse>
     <checkboxgroup label="Yes, I have read this letter" direction="vertical">
