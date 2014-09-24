@@ -9,7 +9,7 @@ data: |
         var container = $('header .user .user-link');
         var rawText = container.text();
         var username = /(\w+)\s*$/.exec(rawText);
-        $('iframe[data-dom-id="verySpecificDashboardIFrame"]').attr('src', 'http://54.85.28.165:8100/resources/Competency-Dashboard/badge-progress.html' + (username ? '?username='+username[1] : ''));
+        $('iframe[data-dom-id="verySpecificDashboardIFrame"]').attr('src', 'http://54.85.28.165:8100/resources/Competency-Dashboard/badge-progress.html?homepage='+encodeURIComponent(window.location.origin) + (username ? '&username='+username[1] : ''));
         console.log('Src set');
       </script>
 
