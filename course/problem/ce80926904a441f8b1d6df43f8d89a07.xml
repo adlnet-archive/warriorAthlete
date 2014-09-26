@@ -1,10 +1,12 @@
-<problem display_name="" markdown="Which of the following does the video Army PT: Fit for Duty focus on?&#10;( ) Gluteal and upper leg strength&#10;( ) Lower body and leg strength&#10;(x) Upper body and core strength&#10;">
-  <p>Which of the following does the video Army PT: Fit for Duty focus on?</p>
-  <multiplechoiceresponse>
-    <choicegroup type="MultipleChoice">
-      <choice correct="false">Gluteal and upper leg strength</choice>
-      <choice correct="false">Lower body and leg strength</choice>
-      <choice correct="true">Upper body and core strength</choice>
-    </choicegroup>
-  </multiplechoiceresponse>
+<problem display_name="Strength Question #4" markdown="Which of the following does the video Army PT: Fit for Duty focus on?&#10;( ) Gluteal and upper leg strength&#10;( ) Lower body and leg strength&#10;(x) Upper body and core strength&#10;">
+<p>Which of the following does the video Army PT: Fit for Duty focus on?</p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="false">Gluteal and upper leg strength</choice>
+    <choice correct="false">Lower body and leg strength</choice>
+    <choice correct="true">Upper body and core strength</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+
 </problem>

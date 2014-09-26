@@ -1,10 +1,12 @@
-<problem display_name="" markdown="Training document FM 22-20 became which of the following?&#10;&#10;( ) FM 22-21&#10;(x) Training circular TC 3-22.20&#10;( ) Training circular TC 4-22.21&#10;&#10;&#10;">
-  <p>Training document FM 22-20 became which of the following?</p>
-  <multiplechoiceresponse>
-    <choicegroup type="MultipleChoice">
-      <choice correct="false">FM 22-21</choice>
-      <choice correct="true">Training circular TC 3-22.20</choice>
-      <choice correct="false">Training circular TC 4-22.21</choice>
-    </choicegroup>
-  </multiplechoiceresponse>
+<problem display_name="Ethos Question #4" markdown="Training document FM 22-20 became which of the following?&#10;&#10;( ) FM 22-21&#10;(x) Training circular TC 3-22.20&#10;( ) Training circular TC 4-22.21&#10;&#10;&#10;">
+<p>Training document FM 22-20 became which of the following?</p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="false">FM 22-21</choice>
+    <choice correct="true">Training circular TC 3-22.20</choice>
+    <choice correct="false">Training circular TC 4-22.21</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+
 </problem>

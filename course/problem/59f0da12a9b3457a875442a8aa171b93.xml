@@ -1,9 +1,11 @@
-<problem display_name="" markdown="During recovery, Soldiers should quickly taper activities (cool-down) so that temperature and heart rate return to a pre-exercise state.&#10;( ) True&#10;(x) False&#10;&#10;&#10;">
-  <p>During recovery, Soldiers should quickly taper activities (cool-down) so that temperature and heart rate return to a pre-exercise state.</p>
-  <multiplechoiceresponse>
-    <choicegroup type="MultipleChoice">
-      <choice correct="false">True</choice>
-      <choice correct="true">False</choice>
-    </choicegroup>
-  </multiplechoiceresponse>
+<problem display_name="Endurance Question #9" markdown="During recovery, Soldiers should quickly taper activities (cool-down) so that temperature and heart rate return to a pre-exercise state.&#10;( ) True&#10;(x) False&#10;&#10;&#10;">
+<p>During recovery, Soldiers should quickly taper activities (cool-down) so that temperature and heart rate return to a pre-exercise state.</p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="false">True</choice>
+    <choice correct="true">False</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+
 </problem>
