@@ -1,11 +1,9 @@
 <problem display_name="Mobility Question #13" markdown="Hill Repeats should be conducted under load.&#10;( ) True&#10;(x) False&#10;">
-<p>Hill Repeats should be conducted under load.</p>
-<multiplechoiceresponse>
-  <choicegroup type="MultipleChoice">
-    <choice correct="false">True</choice>
-    <choice correct="true">False</choice>
-  </choicegroup>
-</multiplechoiceresponse>
-
-
+  <p>Hill Repeats should be conducted under load.</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">True</choice>
+      <choice correct="true">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
 </problem>

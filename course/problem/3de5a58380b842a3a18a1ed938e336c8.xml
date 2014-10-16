@@ -1,11 +1,9 @@
 <problem display_name="Endurance Question #8" markdown="You should NOT wear combat equipment while conducting Hill Repeats Drills.&#10;(x) True&#10;( ) False&#10;&#10;&#10;">
-<p>You should NOT wear combat equipment while conducting Hill Repeats Drills.</p>
-<multiplechoiceresponse>
-  <choicegroup type="MultipleChoice">
-    <choice correct="true">True</choice>
-    <choice correct="false">False</choice>
-  </choicegroup>
-</multiplechoiceresponse>
-
-
+  <p>You should NOT wear combat equipment while conducting Hill Repeats Drills.</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">True</choice>
+      <choice correct="false">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
 </problem>

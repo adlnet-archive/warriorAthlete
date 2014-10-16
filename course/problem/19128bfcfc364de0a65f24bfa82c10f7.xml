@@ -1,22 +1,17 @@
 <problem display_name="Endurance Question #1" markdown="&gt;&gt;When using Endurance Training Machines, what are the variables to consider?&lt;&lt;&#10;&#10;     ( ) exercise duration and training intensity&#10;     ( ) training frequency, exercise duration, and training intensity&#10;     ( ) exercise mode, training method, exercise repetitions&#10;     (x) exercise mode, training frequency, exercise duration, and training intensity&#10;     &#10;[explanation]&#10;exercise mode, training frequency, exercise duration, and training intensity&#10;[explanation]&#10;">
-<p>When using Endurance Training Machines, what are the variables to consider?</p>
-<multiplechoiceresponse>
-  <choicegroup label="When using Endurance Training Machines, what are the variables to consider?" type="MultipleChoice">
-    <choice correct="false">exercise duration and training intensity</choice>
-    <choice correct="false">training frequency, exercise duration, and training intensity</choice>
-    <choice correct="false">exercise mode, training method, exercise repetitions</choice>
-    <choice correct="true">exercise mode, training frequency, exercise duration, and training intensity</choice>
-  </choicegroup>
-</multiplechoiceresponse>
-
-     
-<solution>
-<div class="detailed-solution">
-<p>Explanation</p>
-
-<p>exercise mode, training frequency, exercise duration, and training intensity</p>
-
-</div>
-</solution>
-
+  <p>When using Endurance Training Machines, what are the variables to consider?</p>
+  <multiplechoiceresponse>
+    <choicegroup label="When using Endurance Training Machines, what are the variables to consider?" type="MultipleChoice">
+      <choice correct="false">exercise duration and training intensity</choice>
+      <choice correct="false">training frequency, exercise duration, and training intensity</choice>
+      <choice correct="false">exercise mode, training method, exercise repetitions</choice>
+      <choice correct="true">exercise mode, training frequency, exercise duration, and training intensity</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>exercise mode, training frequency, exercise duration, and training intensity</p>
+    </div>
+  </solution>
 </problem>

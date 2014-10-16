@@ -1,13 +1,11 @@
 <problem display_name="Strength Question #3" markdown="Which of the following are the main muscle groups worked by upper body push exercises?&#10;&#10;[x] pectorals&#10;[x] triceps&#10;[ ] gluteals&#10;[x] deltoids&#10;">
-<p>Which of the following are the main muscle groups worked by upper body push exercises?</p>
-<choiceresponse>
-  <checkboxgroup direction="vertical">
-    <choice correct="true">pectorals</choice>
-    <choice correct="true">triceps</choice>
-    <choice correct="false">gluteals</choice>
-    <choice correct="true">deltoids</choice>
-  </checkboxgroup>
-</choiceresponse>
-
-
+  <p>Which of the following are the main muscle groups worked by upper body push exercises?</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true">pectorals</choice>
+      <choice correct="true">triceps</choice>
+      <choice correct="false">gluteals</choice>
+      <choice correct="true">deltoids</choice>
+    </checkboxgroup>
+  </choiceresponse>
 </problem>

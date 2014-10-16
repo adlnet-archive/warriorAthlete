@@ -1,12 +1,10 @@
 <problem display_name="Nutrition Question #7" markdown="A 170 lb. Male Warfighter requires approximately: &#10;(x) 3,900 calories/day&#10;( ) 5,000 calories/day&#10;( ) 2,000 calories/day&#10;&#10;&#10;&#10;&#10;">
-<p>A 170 lb. Male Warfighter requires approximately: </p>
-<multiplechoiceresponse>
-  <choicegroup type="MultipleChoice">
-    <choice correct="true">3,900 calories/day</choice>
-    <choice correct="false">5,000 calories/day</choice>
-    <choice correct="false">2,000 calories/day</choice>
-  </choicegroup>
-</multiplechoiceresponse>
-
-
+  <p>A 170 lb. Male Warfighter requires approximately: </p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">3,900 calories/day</choice>
+      <choice correct="false">5,000 calories/day</choice>
+      <choice correct="false">2,000 calories/day</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
 </problem>

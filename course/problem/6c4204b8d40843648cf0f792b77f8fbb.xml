@@ -1,13 +1,11 @@
 <problem display_name="Strength Question #1" markdown="&gt;&gt;Which of the following are the phases in a proper training cycle?&lt;&lt;&#10;&#10;[ ] PLAN&#10;[x] RESET&#10;[x] TRAIN&#10;[x] READY&#10;">
-<p>Which of the following are the phases in a proper training cycle?</p>
-<choiceresponse>
-  <checkboxgroup label="Which of the following are the phases in a proper training cycle?" direction="vertical">
-    <choice correct="false">PLAN</choice>
-    <choice correct="true">RESET</choice>
-    <choice correct="true">TRAIN</choice>
-    <choice correct="true">READY</choice>
-  </checkboxgroup>
-</choiceresponse>
-
-
+  <p>Which of the following are the phases in a proper training cycle?</p>
+  <choiceresponse>
+    <checkboxgroup label="Which of the following are the phases in a proper training cycle?" direction="vertical">
+      <choice correct="false">PLAN</choice>
+      <choice correct="true">RESET</choice>
+      <choice correct="true">TRAIN</choice>
+      <choice correct="true">READY</choice>
+    </checkboxgroup>
+  </choiceresponse>
 </problem>
