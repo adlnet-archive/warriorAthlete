@@ -1,13 +1,11 @@
 <problem display_name="Mobility Question #14" markdown="Which is NOT an example of an Endurance Training Machine?&#10;( ) Treadmill Machine&#10;( ) Elliptical Machine&#10;(x) High Pulley Machine&#10;( ) Recumbent Cycle&#10;&#10;">
-<p>Which is NOT an example of an Endurance Training Machine?</p>
-<multiplechoiceresponse>
-  <choicegroup type="MultipleChoice">
-    <choice correct="false">Treadmill Machine</choice>
-    <choice correct="false">Elliptical Machine</choice>
-    <choice correct="true">High Pulley Machine</choice>
-    <choice correct="false">Recumbent Cycle</choice>
-  </choicegroup>
-</multiplechoiceresponse>
-
-
+  <p>Which is NOT an example of an Endurance Training Machine?</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Treadmill Machine</choice>
+      <choice correct="false">Elliptical Machine</choice>
+      <choice correct="true">High Pulley Machine</choice>
+      <choice correct="false">Recumbent Cycle</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
 </problem>
