@@ -6,7 +6,7 @@ if [ "$1" != "-f" ]; then
 fi
 cd /warriorAthlete
 git pull
-if [ -z $? ]; then
+if [ $? == 0 ]; then
 	cd /edx/app/edxapp/edx-platform
 	sudo /edx/bin/python.edxapp ./manage.py cms --settings aws import /edx/var/edxapp/data /warriorAthlete/course
 else
