@@ -1,0 +1,29 @@
+{
+  "start": [
+    5000, 
+    8000, 
+    13000, 
+    17000, 
+    21000, 
+    23000, 
+    26000
+  ], 
+  "end": [
+    8000, 
+    13000, 
+    17000, 
+    21000, 
+    23000, 
+    26000, 
+    26000
+  ], 
+  "text": [
+    "have you ever wondered why it's so difficult to eat just one potato chip", 
+    "that's because many snacks contain an ingredient called monosodium glutamate", 
+    "or MSG a salty substance that acts as a favor enhancer", 
+    "it's what keeps us going back for more  an over consumption of snacks with flavor", 
+    "enhancers can lead to weight gain", 
+    "so check the label and if it contains MSG", 
+    "put it back on the shelf"
+  ]
+}
