@@ -1,10 +1,12 @@
 #!/bin/sh
 
 cd /edx/app/edxapp/edx-platform;
+echo "Removing old course";
+rm -rf /warriorAthlete/course;
 sudo /edx/bin/python.edxapp ./manage.py cms --settings aws export ADL/WA_101/2014_T1  /warriorAthlete/course;
 cd /warriorAthlete;
 git add course;
-git commit -m "$1";
+git commit -a -m "$1";
 git fetch;
 if git merge origin/development;
 then
