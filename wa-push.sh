@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 cd /edx/app/edxapp/edx-platform;
 echo "Removing old course";
