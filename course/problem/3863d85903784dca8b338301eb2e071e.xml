@@ -1,9 +1,11 @@
-<problem display_name="" markdown="Less than 8 hours of sleep helps to benefit weight loss?&#10;( ) True&#10;(x) False&#10;&#10;&#10;&#10;">
-  <p>Less than 8 hours of sleep helps to benefit weight loss?</p>
-  <multiplechoiceresponse>
-    <choicegroup type="MultipleChoice">
-      <choice correct="false">True</choice>
-      <choice correct="true">False</choice>
-    </choicegroup>
-  </multiplechoiceresponse>
+<problem display_name="Strength Question #12" markdown="Less than 8 hours of sleep helps to benefit weight loss?&#10;( ) True&#10;(x) False&#10;&#10;&#10;&#10;">
+<p>Less than 8 hours of sleep helps to benefit weight loss?</p>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="false">True</choice>
+    <choice correct="true">False</choice>
+  </choicegroup>
+</multiplechoiceresponse>
+
+
 </problem>
