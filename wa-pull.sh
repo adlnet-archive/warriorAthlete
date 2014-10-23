@@ -1,9 +1,16 @@
 #!/bin/bash
 
 if [ "$1" != "-f" ]; then
+	# dump the current course, if nothing is out of sync then all is well
 	cd /edx/app/edxapp/edx-platform
 	sudo /edx/bin/python.edxapp ./manage.py cms --settings aws export ADL/WA_101/2014_T1  /warriorAthlete/course
+else
+	# clean up previous dumps, get ready for new upstream content
+	cd /warriorAthlete
+	git clean -f
+	git reset --hard
 fi
+
 cd /warriorAthlete
 git pull
 if [ $? == 0 ]; then
