@@ -115,7 +115,7 @@ data: |
           initial_state='{}'
           width="800"
           height="600"
-          html_file="http://ec2-54-88-206-34.compute-1.amazonaws.com:3000/adl/sandbox/Gk3WMXRg4pgROLZ1"
+          html_file="http://ec2-54-88-206-34.compute-1.amazonaws.com:3000/adl/sandbox/akJpH8kSqyaXwLiB/"
           sop="false"/>
       </customresponse>
       </problem>
