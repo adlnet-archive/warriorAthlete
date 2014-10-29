@@ -1,0 +1,10 @@
+<problem display_name="Mobility Question #10" markdown="What piece of equipment is recommended for the Strength Training Circuit?&#10; ( ) Medicine Balls&#10; ( ) Barbells&#10; (x) Kettlebells">
+  <p>What piece of equipment is recommended for the Strength Training Circuit?</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Medicine Balls</choice>
+      <choice correct="false">Barbells</choice>
+      <choice correct="true">Kettlebells</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

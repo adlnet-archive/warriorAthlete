@@ -1,0 +1,10 @@
+<problem display_name="Strength Question #11" markdown="The Upright Row exercise targets what muscles?&#10;(x) Deltoid, Latissimus Dorsi&#10;( ) Triceps Brachii, Biceps Brachii&#10;( ) Pectorals Major, Rectus Abdominus&#10;&#10;&#10;">
+  <p>The Upright Row exercise targets what muscles?</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">Deltoid, Latissimus Dorsi</choice>
+      <choice correct="false">Triceps Brachii, Biceps Brachii</choice>
+      <choice correct="false">Pectorals Major, Rectus Abdominus</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

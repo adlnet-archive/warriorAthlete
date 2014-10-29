@@ -1,0 +1,21 @@
+<problem display_name="Mobility Question #4" markdown="Which of the following are correct statements regarding Crossovers?&#10;[ ] Dragging the feet along the ground is recommended.&#10;[x] Crouch slightly while keeping the back straight.&#10;[ ] Maintain the trunk at a 60 degree angle to the direction of travel while allowing the hips to move naturally.&#10;[x] To start, cross the trail leg first to the front of the lead leg and step in the direction of travel to return to the starting position.&#10;&#10;[explanation]&#10;Pick the feet up with each step. Avoid dragging the feet along the ground.&#10;Crouch slightly while keeping the back straight.&#10;Maintain the trunk perpendicular to the direction of travel while allowing the hips to move naturally.&#10;Cross the trail leg first to the front of the lead leg and step in the direction of travel to return to the&#10;starting position.&#10;[explanation]&#10;">
+  <p>Which of the following are correct statements regarding Crossovers?</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="false">Dragging the feet along the ground is recommended.</choice>
+      <choice correct="true">Crouch slightly while keeping the back straight.</choice>
+      <choice correct="false">Maintain the trunk at a 60 degree angle to the direction of travel while allowing the hips to move naturally.</choice>
+      <choice correct="true">To start, cross the trail leg first to the front of the lead leg and step in the direction of travel to return to the starting position.</choice>
+    </checkboxgroup>
+  </choiceresponse>
+  <solution>
+    <div class="detailed-solution">
+      <p>Explanation</p>
+      <p>Pick the feet up with each step. Avoid dragging the feet along the ground.</p>
+      <p>Crouch slightly while keeping the back straight.</p>
+      <p>Maintain the trunk perpendicular to the direction of travel while allowing the hips to move naturally.</p>
+      <p>Cross the trail leg first to the front of the lead leg and step in the direction of travel to return to the</p>
+      <p>starting position.</p>
+    </div>
+  </solution>
+</problem>

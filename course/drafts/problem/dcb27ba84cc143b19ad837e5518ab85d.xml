@@ -1,0 +1,9 @@
+<problem display_name="Nutrition Question #5" markdown="A problem for the warrior athletes is that they don't eat enough food for the amount of training they are doing.&#10;(x) True&#10;( ) False&#10;&#10;&#10;">
+  <p>A problem for the warrior athletes is that they don't eat enough food for the amount of training they are doing.</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">True</choice>
+      <choice correct="false">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

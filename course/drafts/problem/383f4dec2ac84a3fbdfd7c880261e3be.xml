@@ -1,0 +1,12 @@
+<problem display_name="Ethos Question #3" markdown="PRT standards are achieved through precise control of which of the following?&#10;&#10;[x] Prescribe appropriate intensity and duration to which Soldiers perform PRT.&#10;[x] Properly distribute external loads across the major joints of the body.&#10;[ ] Integrate body and mind to develop &quot;muscular intelligence&quot;.&#10;[ ] Provide medical intervention where necessary.&#10;[ ] Provide adequate motivation to achieve standards.&#10;&#10;&#10;&#10;">
+  <p>PRT standards are achieved through precise control of which of the following?</p>
+  <choiceresponse>
+    <checkboxgroup direction="vertical">
+      <choice correct="true">Prescribe appropriate intensity and duration to which Soldiers perform PRT.</choice>
+      <choice correct="true">Properly distribute external loads across the major joints of the body.</choice>
+      <choice correct="false">Integrate body and mind to develop "muscular intelligence".</choice>
+      <choice correct="false">Provide medical intervention where necessary.</choice>
+      <choice correct="false">Provide adequate motivation to achieve standards.</choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

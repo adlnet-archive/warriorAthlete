@@ -1,0 +1,10 @@
+<problem display_name="Mobility Question #7" markdown="Climbing Drills involve the use of which of the following?&#10; (x) High bars&#10; ( ) Free-weights&#10; ( ) Inclined treadmill">
+  <p>Climbing Drills involve the use of which of the following?</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">High bars</choice>
+      <choice correct="false">Free-weights</choice>
+      <choice correct="false">Inclined treadmill</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

@@ -1,0 +1,9 @@
+<problem display_name="Nutrition Question #14" markdown="The majority of your daily caloric intake should come from meat products if you are preparing for high-energy activities.&#10;( ) True&#10;(x) False&#10;&#10;&#10;&#10;&#10;">
+  <p>The majority of your daily caloric intake should come from meat products if you are preparing for high-energy activities.</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">True</choice>
+      <choice correct="true">False</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

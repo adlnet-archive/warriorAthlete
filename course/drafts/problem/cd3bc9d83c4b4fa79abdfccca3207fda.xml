@@ -1,0 +1,8 @@
+<problem display_name="Confirm Participation" markdown="null" showanswer="never" weight="0.0">
+  <p id="have_read">I have read this page!</p>
+  <choiceresponse>
+    <checkboxgroup label="Yes, I have!" direction="vertical">
+      <choice correct="true">correct</choice>
+    </checkboxgroup>
+  </choiceresponse>
+</problem>

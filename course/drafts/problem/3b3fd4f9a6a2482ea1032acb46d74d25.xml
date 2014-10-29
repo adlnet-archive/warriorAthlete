@@ -1,0 +1,10 @@
+<problem display_name="Nutrition Question #8" markdown="A 130 lb. Female Range Walker requires approximately: &#10;( ) 3,900 calories/day&#10;( ) 2,600 calories/day&#10;(x) 2,080 calories/day&#10;&#10;&#10;&#10;&#10;&#10;">
+  <p>A 130 lb. Female Range Walker requires approximately: </p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">3,900 calories/day</choice>
+      <choice correct="false">2,600 calories/day</choice>
+      <choice correct="true">2,080 calories/day</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

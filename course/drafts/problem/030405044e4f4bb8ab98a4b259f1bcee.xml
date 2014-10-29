@@ -1,0 +1,10 @@
+<problem display_name="Mobility Question #15" markdown="What purpose does Foot Marches serve for the Warrior Athlete?&#10;( ) To develop explosive leg strength, anaerobic power, and speed.&#10;(x) To move successfully under load.&#10;( ) To sustain performance of physically demanding tasks at a higher intensity for a longer duration.&#10;&#10;&#10;">
+  <p>What purpose does Foot Marches serve for the Warrior Athlete?</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">To develop explosive leg strength, anaerobic power, and speed.</choice>
+      <choice correct="true">To move successfully under load.</choice>
+      <choice correct="false">To sustain performance of physically demanding tasks at a higher intensity for a longer duration.</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>
