@@ -25,7 +25,7 @@ function deploy(req, res, next) {
             //first, lets reset the entire git repo
             //currently not  doing this, so local changes on the server will not be 
             //overwritten
-            /*      function(cb) {
+            function(cb) {
                 child_process.execFile('git', ['reset', '--hard'], {
                     cwd: __dirname + '/../'
                 }, function(e, s, o) {
@@ -34,7 +34,7 @@ function deploy(req, res, next) {
                     console.log(o);
                     cb();
                 })
-            },*/
+            },
             //now, we pull new est version of the software
             function(cb) {
                 child_process.execFile('git', ['pull'], {
@@ -134,7 +134,7 @@ function deploy(req, res, next) {
             },
             function(cb)
             {
-                 child_process.execFile('sudo', ['wa-pull.sh'], {
+                 child_process.execFile('sudo', ['wa-pull.sh', '-f'], {
                     cwd:  '/warriorAthlete'
                 }, function(e, s, o) {
                     console.log(e);
