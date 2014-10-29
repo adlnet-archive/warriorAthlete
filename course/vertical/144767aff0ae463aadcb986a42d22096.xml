@@ -1,3 +1,4 @@
 <vertical display_name="Create Physical Readiness Training (PRT) Plan (items for this badge)">
   <html url_name="6919fd90e5d549078591eb6c95d8f0bc"/>
+  <table url_name="591ea471f35e40319af625e81fe06b2b" display_name="Table XBlock" showColumns="[u'[Column name]']" currentStructure="Table" tableStructure="{u'Table': {u'rows': [], u'displayName': u'Table XBlock', u'rowTypes': [u'normal', u'parent', u'appendable', u'parentAppendable'], u'columnTypes': [u'text', u'textarea', u'checkbox', u'label', u'number', u'xAPI button', u'xAPI onetimeButton'], u'_timestamp': 1414597945855L, u'allowNewRows': True, u'allowNewColumns': False, u'columns': [{u'type': u'text', u'placeholder': u'', u'name': u'[Column name]', u'context': False, u'xAPI': False}], u'xAPIObject': u''}}"/>
 </vertical>
