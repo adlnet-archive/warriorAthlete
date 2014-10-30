@@ -1,9 +1,0 @@
-<problem display_name="Nutrition Question #13" markdown="It is recommended that the total caloric intake for fat on a daily basis should be no more than 10 percent.  &#10;(x) True&#10;( ) False&#10;&#10;&#10;&#10;&#10;">
-  <p>It is recommended that the total caloric intake for fat on a daily basis should be no more than 10 percent.  </p>
-  <multiplechoiceresponse>
-    <choicegroup type="MultipleChoice">
-      <choice correct="true">True</choice>
-      <choice correct="false">False</choice>
-    </choicegroup>
-  </multiplechoiceresponse>
-</problem>
