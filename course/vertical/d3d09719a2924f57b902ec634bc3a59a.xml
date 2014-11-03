@@ -1,4 +1,6 @@
 <vertical display_name="Read letter from Lt Gen Hertling">
   <html url_name="c1344990cebd481887ddfd578e1c7c5f"/>
+  <pdf url_name="b31aaf9bdeb54c258d4584707f8111b5" display_name="" allow_download="True" source_url="" source_text="" url="/static/hertling.pdf"/>
   <problem url_name="df7551df16f34439b293ce6186ba6e7b"/>
+  <piechart url_name="8f6fc6db0d5e4f59b490fa5a111eccc2" showLabels="True" height="500" display_name="Pie Chart" startAngle="0" labelType="0" endAngle="360" groupNames="[u'Group 1', u'Group 2', u'Group 3', u'Group 4', u'Group 5']" labelThreshold="0" donut="False" groupValues="[100, 200, 300, 600, 150]" width="500"/>
 </vertical>

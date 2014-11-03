@@ -1,4 +1,4 @@
-<course advanced_modules="[&quot;table&quot;, &quot;pdf&quot;]" course_image="course logo.png" disable_progress_graph="true" display_name="Warrior Athlete" end="2015-09-09T04:00:00Z" enrollment_end="2015-09-09T04:00:00Z" enrollment_start="2014-09-09T04:00:00Z" info_sidebar_name="Resources" ispublic="true" no_grade="true" start="2014-09-09T04:00:00Z">
+<course advanced_modules="[&quot;table&quot;, &quot;pdf&quot;, &quot;piechart&quot;]" course_image="course logo.png" disable_progress_graph="true" display_name="Warrior Athlete" end="2015-09-09T04:00:00Z" enrollment_end="2015-09-09T04:00:00Z" enrollment_start="2014-09-09T04:00:00Z" info_sidebar_name="Resources" ispublic="true" no_grade="true" start="2014-09-09T04:00:00Z">
   <chapter url_name="3721516fa55e498ea2e46ea89ed74dbc"/>
   <chapter url_name="ecd311692e304596aa44e2982834faff"/>
   <chapter url_name="354346231a154de3ae71b4e8d183eea8"/>
