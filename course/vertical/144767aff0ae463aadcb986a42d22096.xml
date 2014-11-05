@@ -1,4 +1,4 @@
 <vertical display_name="Create Physical Readiness Training (PRT) Plan (items for this badge)">
   <html url_name="6919fd90e5d549078591eb6c95d8f0bc"/>
-  <table url_name="61e7110689c948d08b2918da97a5fa05" display_name="Table XBlock"/>
+  <table url_name="61e7110689c948d08b2918da97a5fa05" display_name="Warrior Athlete PRT" showColumns="[]" currentStructure="Table" tableStructure="{u'Table': {u'rows': [{u'type': u'parent', u'name': u'Ultimate Goal'}, {u'type': u'parentAppendable', u'name': u'Week'}], u'displayName': u'Warrior Athlete PRT', u'rowTypes': [u'normal', u'parent', u'appendable', u'parentAppendable'], u'columnTypes': [u'text', u'textarea', u'checkbox', u'label', u'number', u'xAPI button', u'xAPI onetimeButton'], u'_timestamp': 1415224108872L, u'allowNewRows': True, u'allowNewColumns': False, u'columns': [{u'type': u'text', u'placeholder': u'Enter name of exercise', u'name': u'Exercise', u'context': False, u'xAPI': False}, {u'type': u'text', u'placeholder': u'This is a test', u'name': u'Test', u'context': False, u'xAPI': False}], u'xAPIObject': u''}}"/>
 </vertical>
