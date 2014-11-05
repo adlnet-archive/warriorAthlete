@@ -1,0 +1,10 @@
+<problem display_name="Strength Question #9" markdown="The Side Raise exercise targets which muscles?&#10;( ) Triceps&#10;( ) Biceps&#10;(x) Deltoid&#10;&#10;&#10;">
+  <p>The Side Raise exercise targets which muscles?</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Triceps</choice>
+      <choice correct="false">Biceps</choice>
+      <choice correct="true">Deltoid</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

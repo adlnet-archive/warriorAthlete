@@ -1,0 +1,10 @@
+<problem display_name="Strength Question #6" markdown="Close Grip Push-ups target which muscles?&#10;( ) Triceps Brachii, Biceps Brachii&#10;( ) Erector Spinae, Deltoids&#10;(x) Pectorals Major, Triceps Brachii&#10;&#10;">
+  <p>Close Grip Push-ups target which muscles?</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="false">Triceps Brachii, Biceps Brachii</choice>
+      <choice correct="false">Erector Spinae, Deltoids</choice>
+      <choice correct="true">Pectorals Major, Triceps Brachii</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>

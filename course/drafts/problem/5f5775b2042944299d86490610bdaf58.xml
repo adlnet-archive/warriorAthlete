@@ -1,0 +1,10 @@
+<problem display_name="Strength Question #5" markdown="Which of the following is required to do the exercises?&#10;(x) Dumbells and Figure 8 resistance band&#10;( ) Kettlebells&#10;( ) Wrist and ankle weights&#10;">
+  <p>Which of the following is required to do the exercises?</p>
+  <multiplechoiceresponse>
+    <choicegroup type="MultipleChoice">
+      <choice correct="true">Dumbells and Figure 8 resistance band</choice>
+      <choice correct="false">Kettlebells</choice>
+      <choice correct="false">Wrist and ankle weights</choice>
+    </choicegroup>
+  </multiplechoiceresponse>
+</problem>
