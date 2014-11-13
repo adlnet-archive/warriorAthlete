@@ -1,9 +1,0 @@
-<problem display_name="Nutrition Question #3" markdown="According to government statistics, more than one in three American adults is considered overweight or obese.&#10;( ) True&#10;(x) False&#10;&#10;&#10;">
-  <p>According to government statistics, more than one in three American adults is considered overweight or obese.</p>
-  <multiplechoiceresponse>
-    <choicegroup type="MultipleChoice">
-      <choice correct="false">True</choice>
-      <choice correct="true">False</choice>
-    </choicegroup>
-  </multiplechoiceresponse>
-</problem>
