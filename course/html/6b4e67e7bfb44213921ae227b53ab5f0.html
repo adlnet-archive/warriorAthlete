@@ -1,0 +1,8 @@
+<h2>Competency Progress</h2>
+<iframe data-dom-id="verySpecificDashboardIFrame" style="width:100%; height:100px;" marginwidth="0" marginheight="0" frameborder="0" scrolling="no">You need an iFrame capable browser to view this.</iframe>
+<script>
+  var container = $('header .user .user-link');
+  var rawText = container.text();
+  var username = /(\w+)\s*$/.exec(rawText);
+  $('iframe[data-dom-id="verySpecificDashboardIFrame"]').attr('src', 'http://adlx.adlnet.gov:8100/resources/Competency-Dashboard/single-progress.html?homepage='+encodeURIComponent(window.location.origin) + '&currentBadge=Mobility' + (username ? '&username='+username[1] : ''));
+</script>
