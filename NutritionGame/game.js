@@ -19,6 +19,15 @@ function bringFront(elem, stack) {
     });
 }
 
+function adjustHeights(index, elem) {
+
+    var fontstep = 2;
+    if ($(elem).height() > $(elem).parent().height() || $(elem).width() > $(elem).parent().width()) {
+        $(elem).css('font-size', (($(elem).css('font-size').substr(0, 2) - fontstep)) + 'px').css('line-height', (($(elem).css('font-size').substr(0, 2))) + 'px');
+        adjustHeights(index, elem);
+    }
+}
+
 //a class to hold the current state of the plate, and all items on it
 var currentPlate = {
     items: [],
@@ -134,10 +143,10 @@ var currentPlate = {
 
         //when the delete button for the entry in the list is clicked
         $('#' + guid + 'delete').click(function() {
-                var link = $(this).attr('linkedTo');
-                currentPlate.removeItem(link);
-            })
-            //Hilight the food on the plate when mouse over on the list
+            var link = $(this).attr('linkedTo');
+            currentPlate.removeItem(link);
+        })
+        //Hilight the food on the plate when mouse over on the list
         $('#' + guid + 'preview').mouseover(function() {
             var link = $(this).attr('linkedTo');
             $('#' + link).addClass('hilight');
@@ -177,70 +186,70 @@ function FoodType(id, name, thumb, cals, fat, salt, carbs, protein, local) {
 
     //Get the position in screen space for the VWF object that is the graphic for this food
     this.getPositionScreenSpace = function() {
-            var position = this.getPosition();
+        var position = this.getPosition();
 
-            var pos = position;
-            pos = [pos[0], pos[1], pos[2], 1];
+        var pos = position;
+        pos = [pos[0], pos[1], pos[2], 1];
 
-            var _viewProjectionMatrix = new THREE.Matrix4();
-            _viewProjectionMatrix.multiplyMatrices(_dView.getCamera().projectionMatrix, _dView.getCamera().matrixWorldInverse);
-            vp = _viewProjectionMatrix.transpose().toArray([]);
+        var _viewProjectionMatrix = new THREE.Matrix4();
+        _viewProjectionMatrix.multiplyMatrices(_dView.getCamera().projectionMatrix, _dView.getCamera().matrixWorldInverse);
+        vp = _viewProjectionMatrix.transpose().toArray([]);
 
-            var screen = MATH.mulMat4Vec4(vp, pos);
-            screen[0] /= screen[3];
-            screen[1] /= screen[3];
+        var screen = MATH.mulMat4Vec4(vp, pos);
+        screen[0] /= screen[3];
+        screen[1] /= screen[3];
 
-            screen[0] /= 2;
-            screen[1] /= 2;
-            screen[2] /= 2;
-            screen[0] += .5;
-            screen[1] += .5;
+        screen[0] /= 2;
+        screen[1] /= 2;
+        screen[2] /= 2;
+        screen[0] += .5;
+        screen[1] += .5;
 
 
-            screen[0] *= $(window).width();
-            screen[1] *= $(window).height();
+        screen[0] *= $(window).width();
+        screen[1] *= $(window).height();
 
-            screen[1] = $(window).height() - screen[1];
-            return screen;
-        }
-        //Light up the material of the 3D model
+        screen[1] = $(window).height() - screen[1];
+        return screen;
+    }
+    //Light up the material of the 3D model
     this.hilight = function(node) {
-            if (!node)
-                node = _Editor.findviewnode(this.id);
-            if (node && node.material) {
-                node.material.emmssiveBack = node.material.emissive.clone();
-                node.material.emissive.r = 1;
-                node.material.emissive.g = 1;
-                node.material.emissive.b = 1;
-            }
-            for (var i in node.children)
-                this.hilight(node.children[i])
+        if (!node)
+            node = _Editor.findviewnode(this.id);
+        if (node && node.material) {
+            node.material.emmssiveBack = node.material.emissive.clone();
+            node.material.emissive.r = 1;
+            node.material.emissive.g = 1;
+            node.material.emissive.b = 1;
         }
-        //un liight the material for the 3d model
+        for (var i in node.children)
+            this.hilight(node.children[i])
+    }
+    //un liight the material for the 3d model
     this.dehilight = function(node) {
-            if (!node)
-                node = _Editor.findviewnode(this.id);
-            if (node && node.material) {
+        if (!node)
+            node = _Editor.findviewnode(this.id);
+        if (node && node.material) {
 
-                node.material.emissive.r = node.material.emmssiveBack.r;
-                node.material.emissive.g = node.material.emmssiveBack.g;
-                node.material.emissive.b = node.material.emmssiveBack.b;
-            }
-            for (var i in node.children)
-                this.dehilight(node.children[i])
+            node.material.emissive.r = node.material.emmssiveBack.r;
+            node.material.emissive.g = node.material.emmssiveBack.g;
+            node.material.emissive.b = node.material.emmssiveBack.b;
         }
-        //hide the food from the line
+        for (var i in node.children)
+            this.dehilight(node.children[i])
+    }
+    //hide the food from the line
     this.hide = function(node) {
-            if (!node)
-                node = _Editor.findviewnode(this.id);
-            if (node && node.material) {
-                node.visibleBack = node.visible;
-                node.visible = false;
-            }
-            for (var i in node.children)
-                this.hide(node.children[i])
+        if (!node)
+            node = _Editor.findviewnode(this.id);
+        if (node && node.material) {
+            node.visibleBack = node.visible;
+            node.visible = false;
         }
-        //show the food on the line
+        for (var i in node.children)
+            this.hide(node.children[i])
+    }
+    //show the food on the line
     this.show = function(node) {
         if (!node)
             node = _Editor.findviewnode(this.id);
@@ -303,9 +312,9 @@ allFoods.add(new FoodType('plane2-vwf-d1387ed7-c89c-e3aa-ddea-da14a16ee580', 'Wh
 allFoods.add(new FoodType('asset-vwf-ad70b7e8-d5fc-81cc-fa94-3c1ab974cf6f', 'Broccoli', 'Broccoli.png', 55, 0.6, 64, 11.2, 3.7));
 allFoods.add(new FoodType('asset-vwf-63f22a47-86ac-2a61-1f40-82bb5f988ac9', 'Carrots', 'CutCarrots.png', 3, 0.1, 5, 0.7, 0.1));
 allFoods.add(new FoodType('asset-vwf-ccfffe81-c102-6db1-36e1-9c5b3148f5e9', 'Corn on Cob', 'CornCob.png', 59, 0.5, 3, 14.1, 2));
-allFoods.add(new FoodType('asset-vwf-7b6f8613-7c4f-adc5-b0d5-5efbb74b4fe', 'Green Beans', 'GreenBeans.png', 44, 0.4, 1, 9.9, 2.4,1));
-allFoods.add(new FoodType('asset-vwf-f9a2374c-221c-4e17-d321-c06f7f0c863b', 'Bananas', 'Banana.png', 105, 0.4, 1, 27, 1.3,1));
-allFoods.add(new FoodType('asset-vwf-927ec08b-956c-6e56-adfe-653ca0d46e49', 'Green Apples', 'GreenApple.png', 53, 0.2, 1, 14.1, 0.3,1));
+allFoods.add(new FoodType('asset-vwf-7b6f8613-7c4f-adc5-b0d5-5efbb74b4fe', 'Green Beans', 'GreenBeans.png', 44, 0.4, 1, 9.9, 2.4, 1));
+allFoods.add(new FoodType('asset-vwf-f9a2374c-221c-4e17-d321-c06f7f0c863b', 'Bananas', 'Banana.png', 105, 0.4, 1, 27, 1.3, 1));
+allFoods.add(new FoodType('asset-vwf-927ec08b-956c-6e56-adfe-653ca0d46e49', 'Green Apples', 'GreenApple.png', 53, 0.2, 1, 14.1, 0.3, 1));
 allFoods.add(new FoodType('asset-vwf-78463c0-3d2d-3f58-2d61-9aac3201809d', 'Cornbread', 'Cornbread.png', 160, 3, 330, 30, 2));
 allFoods.add(new FoodType('asset-vwf-be12dd76-4923-ffd8-f147-8220b9e75a2e', 'Breads', 'Criossant.png', 231, 12, 424, 26.1, 4.7));
 allFoods.add(new FoodType('asset-vwf-f52d3dd3-2bcf-8981-f571-6cde48886998', 'Bread Roll', 'BreadRoll.png', 78, 1.6, 134, 13, 2.7));
@@ -321,7 +330,7 @@ var GameMode = function(id, nicename, instructions, scoreFunc) {
     this.instructions = instructions;
     this.scoreFunc = scoreFunc;
     this.displayInstructions = function() {
-        ('#loadinText1').text(this.instructions);
+        ('#loadinText1 span').text(this.instructions);
     }
 }
 
@@ -411,8 +420,7 @@ var GoalMode = function(id, nicename, instructions, max_calories) {
 
         var score = fatScore + carbScore + calScore + proScore;
 
-        if(this.id != 'GM_FITB"' && stats.local)
-        {
+        if (this.id != 'GM_FITB"' && stats.local) {
             score += Math.random() * 5 + 5;
         }
         return score;
@@ -566,7 +574,10 @@ var gameManager = {
         this.initializeGUI();
 
 
+        $(window).resize(function() {
+            $('.loadscreenmessage span').each(adjustHeights);
 
+        });
         window.setTimeout(function() {
             _dView.interpolateTransforms = false;
             gameManager.updateCharts();
@@ -580,30 +591,33 @@ var gameManager = {
         $("#LoadinScreen").fadeOut();
         $("#LoadoutScreenFail").fadeOut();
         $("#LoadoutScreenWin").fadeIn();
+
+        $('.loadscreenmessage span').each(adjustHeights);
     },
     showLoadOutScreenFail: function() {
         $("#screenRoot").fadeIn();
         $("#LoadinScreen").fadeOut();
         $("#LoadoutScreenFail").fadeIn();
         $("#LoadoutScreenWin").fadeOut();
-
+        $('.loadscreenmessage span').each(adjustHeights);
     },
     showLoadInScreen: function() {
         $("#screenRoot").fadeIn();
         $("#LoadinScreen").fadeIn();
         $("#LoadoutScreenFail").fadeOut();
         $("#LoadoutScreenWin").fadeOut();
+        $('.loadscreenmessage span').each(adjustHeights);
     },
     //load the HTML for the full screen images
     initializeScreens: function() {
         $(document.body).append('<div id="screenRoot"></div>');
         $("#screenRoot").load("./vwfDataManager.svc/datafile/NutritionGame/screens.html", function() {
-            
-            if (gameManager.gamemode)
-            {
-                 $('#loadinText1').text(gameManager.gamemode.headText);
-                $('#instructionText').text(gameManager.gamemode.instructions);
+
+            if (gameManager.gamemode) {
+                $('#loadinText1 span').text(gameManager.gamemode.headText);
+                $('#instructionText span').text(gameManager.gamemode.instructions);
             }
+            $('.loadscreenmessage span').each(adjustHeights);
         });
         this.showLoadInScreen();
 
@@ -641,7 +655,7 @@ var gameManager = {
 
         $("#question").live('click', function() {
             gameManager.showLoadInScreen();
-            $("#loadinButtonNext").text('Resume');
+            $("#loadinButtonNext span").text('Resume');
         });
 
         vwf.callMethod(vwf.application(), 'playSound', ['./vwfdatamanager.svc/datafile/NutritionGame/assets/audio/UI_AmbientMusic.mp3', true, 100]);
@@ -665,14 +679,14 @@ var gameManager = {
     },
     //give the game mode and and the plate, did they pass?
     evaluatePlate: function() {
-        
+
         if (this.gamemode) {
             var score = this.gamemode.scoreFunc();
             if (score >= SCORE_PASS_PERCENT) {
                 this.showLoadOutScreenWin();
             } else {
                 this.showLoadOutScreenFail();
-                debugger;
+                
                 window.setTimeout(function() {
                     gameManager.showLoadInScreen();
                     currentPlate.clearPlate();
@@ -681,7 +695,7 @@ var gameManager = {
                     if (plateJSON)
                         currentPlate.loadPlate(plateJSON);
 
-                },7000)
+                }, 7000)
             }
         }
 
