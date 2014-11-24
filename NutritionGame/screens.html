@@ -1,37 +1,63 @@
 <div id="LoadinScreen" class='screen' style='display:block'>
 	<img class='screen' src="./vwfdatamanager.svc/datafile/NutritionGame/assets/UI_Elements/Challenge_Screen.png">
-	<div id="loadinText1" style="
-    position: absolute;
-    height: 31%;
-    width: 54%;
-    z-index: 102;
-    left: 38%;
-    top: 22%;
-">this is test load in text
-  </div>
-  <div id="instructionText" style="
-    position: absolute;
-    height: 11%;
-    width: 61%;
-    z-index: 102;
-    left: 11%;
-    top: 84%;
-">this is test load in text
-  </div>
-  <div id="loadinButtonNext" style="
-    position: absolute;
-    height: 19%;
-    width: 16%;
-    z-index: 102;
-    left: 82%;
-    top: 63%;
-    cursor:pointer;
-"> Start
-  </div>
+	<div class = "loadscreenmessage" id="loadinText1" style="
+		position: absolute;
+		height: 31%;
+		width: 54%;
+		z-index: 102;
+		left: 38%;
+		top: 22%;
+		"><span>this is test load in text</span>
+	</div>
+	<div  class = "loadscreenmessage" id="instructionText" style="
+		position: absolute;
+		height: 11%;
+		width: 61%;
+		z-index: 102;
+		left: 11%;
+		top: 84%;
+		"><span>this is test load in text</span>
+	</div>
+	<div class = "loadscreenmessage" id="loadinButtonNext" style="
+		position: absolute;
+		height: 19%;
+		width: 11%;
+		z-index: 102;
+		left: 82%;
+		top: 70%;
+		cursor: pointer;
+		text-align: center;
+		"> <span>Start</span>
+	</div>
 </div>
 <div id="LoadoutScreenFail" class='screen' style='display:none'>
+	<div class = "loadscreenmessage" style="
+		position: absolute;
+		width: 54%;
+		height: 18%;
+		top: 18%;
+		left: 39%;
+	z-index: 102;"><span>Well, it looks like we have some things to work on, Warrior. Proportioning your meal to 30% Protein, 60% Carbs, and 10% Fats while watching those calories isn’t an easy task.  Don’t look at this as a failure, look at it as another chance to succeed.  Now get back in there and give it another shot!  I know you’ll get it figured out.</span></div>
+	<div class = "loadscreenmessage" style="position: absolute;
+		width: 57%;
+		height: 7%;
+		top: 88%;
+		left: 29%;
+	z-index: 102;"><span>I know you’ll get it figured out.</span></div>
 	<img class='screen' src="./vwfdatamanager.svc/datafile/NutritionGame/assets/UI_Elements/Congratulations_Screen.png">
 </div>
 <div id="LoadoutScreenWin" class='screen' style='display:none'>
+	<div class = "loadscreenmessage" style="position: absolute;
+		width: 57%;
+		height: 18%;
+		top: 22%;
+		left: 34%;
+	z-index: 102;"><span>Well done Warrior! Using your knowledge of a nutritional meal, you have successfully completed the Nutrition Mission.  You have learned that a well balanced meal that includes appropriate portions of protein, carbs, fats, and calories leads to a more physically capable Warrior.  Keep up the good work and we’ll see you back here soon.</span></div>
+	<div class = "loadscreenmessage" style="position: absolute;
+		width: 57%;
+		height: 18%;
+		top: 87%;
+		left: 51%;
+	z-index: 102;"><span>Click the Check button in edX to submit your score.</span></div>
 	<img class='screen' src="./vwfdatamanager.svc/datafile/NutritionGame/assets/UI_Elements/Failure_Screen.png">
 </div>

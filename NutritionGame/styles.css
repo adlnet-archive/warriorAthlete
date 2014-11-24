@@ -1,250 +1,234 @@
-#CamButton1, #CamButton2{
-	opacity:.6;
+#CamButton1, #CamButton2 {
+	opacity: .6;
 }
-
-#CamButton1:hover, #CamButton2:hover{
-	opacity:1;
+#CamButton1:hover, #CamButton2:hover {
+	opacity: 1;
 }
-
-#tooltipRoot{
+#tooltipRoot {
 	z-index: 10000;
-position: absolute;
-width: 400px;
-height: 238px;
-background: rgba(30,30,30,0.80);
-border-radius: 19px;
-border: 5px groove white;
-padding: 1em;
-box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
+	position: absolute;
+	width: 400px;
+	height: 238px;
+	background: rgba(30, 30, 30, 0.80);
+	border-radius: 19px;
+	border: 5px groove white;
+	padding: 1em;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
 }
-
-
-#foodTitle
-{
+#foodTitle {
 	color: whitesmoke;
-font-family: sans-serif;
-font-size: 3em;
-width: 100%;
-text-align: center;
-text-shadow: 3px 3px 3px gray;
-text-decoration: underline;
+	font-family: sans-serif;
+	font-size: 3em;
+	width: 100%;
+	text-align: center;
+	text-shadow: 3px 3px 3px gray;
+	text-decoration: underline;
 }
-
-#foodTable img
-{
+#foodTable img {
 	width: 150px;
-height: 150px;
-margin: 0em 3em 0em 0em;
-border: 2px solid lightgray;
-border-radius: 9px;
+	height: 150px;
+	margin: 0em 3em 0em 0em;
+	border: 2px solid lightgray;
+	border-radius: 9px;
 }
-
 #foodTable {
-
 	padding: 2em;
 }
-
-#foodStats
-{
+#foodStats {
 	display: inline-block;
-vertical-align: top;
-font-size: 2em;
-color: wheat;
-font-family: sans-serif;
+	vertical-align: top;
+	font-size: 2em;
+	color: wheat;
+	font-family: sans-serif;
 }
-
 #foodAddButton {
-
 	margin: -12px;
-font-size: 2em;
-text-align: center;
-font-family: sans-serif;
-color: whitesmoke;
-text-decoration: underline;
-cursor: pointer;
-
+	font-size: 2em;
+	text-align: center;
+	font-family: sans-serif;
+	color: whitesmoke;
+	text-decoration: underline;
+	cursor: pointer;
 }
-
-#MyPlate
-{
-
-width: 100%;
-height: 100%;
-position: absolute;
-background-size: 100%;
-
-}
-
-
-#trayback
-{
-
-width: 100%;
-height: 100%;
-position: absolute;
-background-size: 100%;
-
-}
-
-
-#plateRoot
-{
-	background-color: rgba(0,0,0,.5);
-position: absolute;
-top: 0px;
-height: 100%;
-left: 0px;
-width: 100%;
-z-index: 100;
-}
-
-#plateContainer
-{
-
-position: absolute;
-top: 72%;
-height: 27%;
-left: 32%;
-width: 36%;
-
-}
-
-.foodthumb
-{
-
+#MyPlate {
+	width: 100%;
+	height: 100%;
 	position: absolute;
-	height:45%;
+	background-size: 100%;
+}
+#trayback {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-size: 100%;
+}
+#plateRoot {
+	background-color: rgba(0, 0, 0, .5);
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	left: 0px;
+	width: 100%;
+	z-index: 100;
+}
+#plateContainer {
+	position: absolute;
+	top: 66%;
+	bottom: 0%;
+	left: 32%;
+	width: 36%;
+	overflow-y: hidden;
+}
+#foodcals, #foodcarbs, #foodfat, #foodsalt, #foodprotein {
+	padding: 0em .5em;
+}
+.foodthumb {
+	position: absolute;
 	width: 30%;
 }
-
-#closePlate
-{
+#closePlate {
 	position: absolute;
-background: black;
-width: 5%;
-height: 5%;
-color: white;
-font-size: 5em;
-text-align: center;
-font-family: sans-serif;
-right: 0%;
-border-radius: 10px;
-border: 3px groove;
-cursor:pointer;
+	background: black;
+	width: 5%;
+	height: 5%;
+	color: white;
+	font-size: 5em;
+	text-align: center;
+	font-family: sans-serif;
+	right: 0%;
+	border-radius: 10px;
+	border: 3px groove;
+	cursor: pointer;
 }
-
-#screenRoot
-{
+#screenRoot {
 	display: block;
-position: absolute;
-width: 100%;
-height: 100%;
-z-index: 100;
-top: 0%;
-left: 0%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	top: 0%;
+	left: 0%;
 }
-
-.screen
-{display: block;
-position: absolute;
-width: 100%;
-height: 100%;
-z-index: 100;
-top: 0%;
-left: 0%;
-font-size: 4em;
-font-weight: bold;
-font-family: sans-serif;
+.screen {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	top: 0%;
+	left: 0%;
+	font-size: 4em;
+	font-weight: bold;
+	font-family: sans-serif;
 }
-
-
-
-.platePreviewItem
-{
-color: white;
-font-size: .5em;
-border-bottom: 3px groove white;
-vertical-align: -webkit-baseline-middle;
+.platePreviewItem {
+	color: white;
+	font-size: .5em;
+	border-bottom: 3px groove white;
+	vertical-align: -webkit-baseline-middle;
 }
-
-.platePreviewItem:hover
-{
- text-shadow:3px 3px 8px lightblue;
+.platePreviewItem:hover {
+	text-shadow: 3px 3px 8px lightblue;
 }
-
-.platePreviewItemHilight
-{
- text-shadow:3px 3px 8px lightblue;
+.platePreviewItemHilight {
+	text-shadow: 3px 3px 8px lightblue;
 }
-
-.closebutton
-{
-float: right;
-border: 1px solid;
-border-radius: 4px;
-font-family: monospace;
-margin: 0.2em;
-padding: 0em .5em;
-cursor: pointer;
+.closebutton {
+	float: right;
+	border: 1px solid;
+	border-radius: 4px;
+	font-family: monospace;
+	margin: 0.2em;
+	padding: 0em .5em;
+	cursor: pointer;
 }
-
-
-.closebutton:hover
-{
+.closebutton:hover {
 	background: blue;
 }
-.platePreviewItem img
-{
-vertical-align: middle;
-height: 50px;
-width: 50px;
+.platePreviewItem img {
+	vertical-align: middle;
+	height: 50px;
+	width: 50px;
 }
-.foodthumb:hover
-{
-	-webkit-filter: drop-shadow(0px 0px 20px rgba(0,0,255,1));
-filter: url(#drop-shadow);
--ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+.foodthumb:hover {
+	-webkit-filter: drop-shadow(0px 0px 20px rgba(0, 0, 255, 1));
+	/* filter: url(#drop-shadow);
+	*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
-
-.hilight
-{
-	-webkit-filter: drop-shadow(0px 0px 20px rgba(0,0,255,1));
-filter: url(#drop-shadow);
--ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+.hilight {
+	-webkit-filter: drop-shadow(0px 0px 20px rgba(0, 0, 255, 1));
+	/* filter: url(#drop-shadow);
+	*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
-
-#CompleteMission
-{
-
-position: absolute;
-bottom: 0%;
-background: rgba(0,0,0,.7);
-color: white;
-padding: .5em;
-border-radius: 10px;
-border: 3px groove;
-cursor:pointer;
-z-index: 99;
-}
-
-#platePreview
-{
+#CompleteMission {
 	position: absolute;
-bottom: 0%;
-right: 0%;
-width: 19%;
-height: 35%;
-background: rgba(0,0,0,.8);
-z-index: 99;
-overflow-y: auto;
+	bottom: 0%;
+	background: rgba(0, 0, 0, .7);
+	color: white;
+	padding: .5em;
+	border-radius: 10px;
+	border: 3px groove;
+	cursor: pointer;
+	z-index: 99;
 }
-
-#gameGuiRoot
-{
-font-size: 4em;
-font-weight: bold;
-font-family: sans-serif;
-z-index:99;
+#CompleteMission:hover {
+	-webkit-filter: drop-shadow(0px 0px 20px rgba(0, 0, 255, 1));
+	/* filter: url(#drop-shadow);
+	*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+#platePreview {
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+	width: 19%;
+	height: 35%;
+	background: rgba(0, 0, 0, .8);
+	z-index: 99;
+	overflow-y: auto;
+}
+#gameGuiRoot {
+	font-size: 4em;
+	font-weight: bold;
+	font-family: sans-serif;
+	z-index: 99;
+}
+.bluff-tooltip {
+	color: white;
+	background: rgba(0, 0, 0, .5);
+	padding: .1em;
+	font-size: 1.5em;
+	font-family: sans-serif;
+	border: 3px groove;
+	border-radius: 7px;
+}
+.bluff-tooltip span {
+	padding: 0em .5em;
+}
+.bluff-tooltip .label {
+}
+.bluff-tooltip .data {
+	color: lightblue;
+	font-weight: bold;
+}
+#question {
+	position: absolute;
+	right: 0px;
+	width: 6%;
+	top: 0%;
+}
+#question:hover {
+	-webkit-filter: drop-shadow(0px 0px 20px rgba(0, 0, 255, 1));
+	/* filter: url(#drop-shadow);
+	*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+.loadscreenmessage {
+	line-height: 0.7em;
 }

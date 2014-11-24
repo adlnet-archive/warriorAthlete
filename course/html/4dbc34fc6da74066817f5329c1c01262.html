@@ -1,7 +1,10 @@
-<p></p>
 <h1><span style="color: #ff0000;"><strong><span style="color: #3c3c3c;" color="#3c3c3c">Warrior Athlete&nbsp;Strength Badge</span></strong><span style="color: #3c3c3c;" color="#3c3c3c"> &nbsp;</span><img width="52" height="52" alt="Ethos badge" src="/static/Strength_Badge-Small.png" type="saveimage" target="[object Object]" /></span></h1>
-<p><span style="color: #ff0000;">[if all activities not complete]</span> In order to receive this badge, you need to complete all of the activities (except the optional Discussion Forum)&nbsp;and pass the quiz. The progress dashboard below shows&nbsp;you how close you are&nbsp;to completion.</p>
-<p><span style="color: #ff0000;">[if all activities complete]</span> Congratulations! You have earned this badge.</p>
-<p>&nbsp;</p>
-<p style="padding-left: 180px;"><span id="docs-internal-guid-089d7251-4199-b66c-f95d-f50884444791" style="color: #0000ff; font-family: Arial; font-size: 19px; font-style: normal; font-variant: normal; font-weight: normal; text-decoration: underline; vertical-align: baseline; background-color: transparent;">Tweet my accomplishment</span></p>
-<p></p>
+
+<h2>Competency Progress</h2>
+<iframe data-dom-id="verySpecificDashboardIFrame" style="width:100%; height:350px;" marginwidth="0" marginheight="0" frameborder="0" scrolling="no">You need an iFrame capable browser to view this.</iframe>
+<script>
+  var container = $('header .user .user-link');
+  var rawText = container.text();
+  var username = /(\w+)\s*$/.exec(rawText);
+  $('iframe[data-dom-id="verySpecificDashboardIFrame"]').attr('src', 'http://adlx.adlnet.gov:8100/resources/Competency-Dashboard/single-progress.html?homepage='+encodeURIComponent(window.location.origin) + '&currentBadge=Strength' + (username ? '&username='+username[1] : ''));
+</script>
