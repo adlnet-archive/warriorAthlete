@@ -1,6 +1,7 @@
-function FoodServing(item, servings) {
+function FoodServing(item, servings, preventRemove) {
     this.servings = servings || 1;
     this.food = item;
+    this.preventRemove = preventRemove;
 }
 
 function bringFront(elem, stack) {
@@ -68,7 +69,7 @@ var currentPlate = {
     removeItem: function(id) {
 
         var index = this.findItem(id);
-        if (index) {
+        if (index >= 0) {
             this.items.splice(index, 1);
             $('#' + id).hide('fade', function() {
                 $('#' + id).remove();
@@ -87,7 +88,7 @@ var currentPlate = {
         $.getJSON("./vwfDataManager.svc/datafile/NutritionGame/plates/" + platename, function(data) {
 
             for (var i in data) {
-                currentPlate.addItem(allFoods.get(data[i]));
+                currentPlate.addItem(allFoods.get(data[i]), 1, true);
             }
 
 
@@ -100,10 +101,10 @@ var currentPlate = {
         }
     },
     //add an item, and do all the GUI work
-    addItem: function(foodItem, servings) {
+    addItem: function(foodItem, servings, preventRemove) {
 
         //create a serving from the item
-        var newFood = new FoodServing(foodItem, servings);
+        var newFood = new FoodServing(foodItem, servings, preventRemove);
         this.items.push(newFood);
 
 
@@ -138,14 +139,18 @@ var currentPlate = {
             '<img src="' + foodItem.thumbnail + '"> ' +
 
             foodItem.name +
-            "<span class='closebutton' linkedTo='" + guid + "' id='" + guid + "delete'>X</span>" +
+            (preventRemove ? "" : "<span class='closebutton' linkedTo='" + guid + "' id='" + guid + "delete'>X</span>") +
             '</div>');
+
 
         //when the delete button for the entry in the list is clicked
         $('#' + guid + 'delete').click(function() {
             var link = $(this).attr('linkedTo');
             currentPlate.removeItem(link);
         })
+
+
+
         //Hilight the food on the plate when mouse over on the list
         $('#' + guid + 'preview').mouseover(function() {
             var link = $(this).attr('linkedTo');
@@ -186,70 +191,70 @@ function FoodType(id, name, thumb, cals, fat, salt, carbs, protein, local) {
 
     //Get the position in screen space for the VWF object that is the graphic for this food
     this.getPositionScreenSpace = function() {
-        var position = this.getPosition();
+            var position = this.getPosition();
 
-        var pos = position;
-        pos = [pos[0], pos[1], pos[2], 1];
+            var pos = position;
+            pos = [pos[0], pos[1], pos[2], 1];
 
-        var _viewProjectionMatrix = new THREE.Matrix4();
-        _viewProjectionMatrix.multiplyMatrices(_dView.getCamera().projectionMatrix, _dView.getCamera().matrixWorldInverse);
-        vp = _viewProjectionMatrix.transpose().toArray([]);
+            var _viewProjectionMatrix = new THREE.Matrix4();
+            _viewProjectionMatrix.multiplyMatrices(_dView.getCamera().projectionMatrix, _dView.getCamera().matrixWorldInverse);
+            vp = _viewProjectionMatrix.transpose().toArray([]);
 
-        var screen = MATH.mulMat4Vec4(vp, pos);
-        screen[0] /= screen[3];
-        screen[1] /= screen[3];
+            var screen = MATH.mulMat4Vec4(vp, pos);
+            screen[0] /= screen[3];
+            screen[1] /= screen[3];
 
-        screen[0] /= 2;
-        screen[1] /= 2;
-        screen[2] /= 2;
-        screen[0] += .5;
-        screen[1] += .5;
+            screen[0] /= 2;
+            screen[1] /= 2;
+            screen[2] /= 2;
+            screen[0] += .5;
+            screen[1] += .5;
 
 
-        screen[0] *= $(window).width();
-        screen[1] *= $(window).height();
+            screen[0] *= $(window).width();
+            screen[1] *= $(window).height();
 
-        screen[1] = $(window).height() - screen[1];
-        return screen;
-    }
-    //Light up the material of the 3D model
+            screen[1] = $(window).height() - screen[1];
+            return screen;
+        }
+        //Light up the material of the 3D model
     this.hilight = function(node) {
-        if (!node)
-            node = _Editor.findviewnode(this.id);
-        if (node && node.material) {
-            node.material.emmssiveBack = node.material.emissive.clone();
-            node.material.emissive.r = 1;
-            node.material.emissive.g = 1;
-            node.material.emissive.b = 1;
+            if (!node)
+                node = _Editor.findviewnode(this.id);
+            if (node && node.material) {
+                node.material.emmssiveBack = node.material.emissive.clone();
+                node.material.emissive.r = 1;
+                node.material.emissive.g = 1;
+                node.material.emissive.b = 1;
+            }
+            for (var i in node.children)
+                this.hilight(node.children[i])
         }
-        for (var i in node.children)
-            this.hilight(node.children[i])
-    }
-    //un liight the material for the 3d model
+        //un liight the material for the 3d model
     this.dehilight = function(node) {
-        if (!node)
-            node = _Editor.findviewnode(this.id);
-        if (node && node.material) {
+            if (!node)
+                node = _Editor.findviewnode(this.id);
+            if (node && node.material) {
 
-            node.material.emissive.r = node.material.emmssiveBack.r;
-            node.material.emissive.g = node.material.emmssiveBack.g;
-            node.material.emissive.b = node.material.emmssiveBack.b;
+                node.material.emissive.r = node.material.emmssiveBack.r;
+                node.material.emissive.g = node.material.emmssiveBack.g;
+                node.material.emissive.b = node.material.emmssiveBack.b;
+            }
+            for (var i in node.children)
+                this.dehilight(node.children[i])
         }
-        for (var i in node.children)
-            this.dehilight(node.children[i])
-    }
-    //hide the food from the line
+        //hide the food from the line
     this.hide = function(node) {
-        if (!node)
-            node = _Editor.findviewnode(this.id);
-        if (node && node.material) {
-            node.visibleBack = node.visible;
-            node.visible = false;
+            if (!node)
+                node = _Editor.findviewnode(this.id);
+            if (node && node.material) {
+                node.visibleBack = node.visible;
+                node.visible = false;
+            }
+            for (var i in node.children)
+                this.hide(node.children[i])
         }
-        for (var i in node.children)
-            this.hide(node.children[i])
-    }
-    //show the food on the line
+        //show the food on the line
     this.show = function(node) {
         if (!node)
             node = _Editor.findviewnode(this.id);
@@ -448,11 +453,11 @@ var GameModes = {
 
 };
 
-var GOAL_MODE_HIGH_INSTRUCTIONS = '';
-var GOAL_MODE_MED_INSTRUCTIONS = '';
-var GOAL_MODE_LOW_INSTRUCTIONS = '';
-var SNACK_MODE_INSTRUCTIONS = '';
-var FITB_MODE_INSTRUCTIONS = '';
+var GOAL_MODE_HIGH_INSTRUCTIONS = 'Try to make your meal as close to goal as possible:  30% Proteins, 60% Carbohydrates, 10% Fats, and 1500 Calories.  You’ve got a little wiggle room on the percentages, but not much.  Click Complete Mission! when you’ve finished.';
+var GOAL_MODE_MED_INSTRUCTIONS = 'Try to make your meal as close to goal as possible:  30% Proteins, 60% Carbohydrates, 10% Fats, and 1100 Calories.  You’ve got a little wiggle room on the percentages, but not much.  Click Complete Mission! when you’ve finished.';
+var GOAL_MODE_LOW_INSTRUCTIONS = 'Try to make your meal as close to goal as possible:  30% Proteins, 60% Carbohydrates, 10% Fats, and 800 Calories.  You’ve got a little wiggle room on the percentages, but not much.  Click Complete Mission! when you’ve finished.';
+var SNACK_MODE_INSTRUCTIONS = 'Try to make your meal as close to goal as possible:  30% Proteins, 60% Carbohydrates, 10% Fats, and a 200 Calorie limit.  You’ve got a little wiggle room on the percentages, but not much.  Click Complete Mission! when you’ve finished.';
+var FITB_MODE_INSTRUCTIONS = 'Try to make your meal as close to goal as possible:  30% Proteins, 60% Carbohydrates, 10% Fats.  You’ve got a little wiggle room on the percentages, but not much.  Click Complete Mission! when you’ve finished.';
 
 
 var GOAL_MODE_HIGH_TEXT = 'Welcome Warrior! You are about to attempt the Nutrition Mission:  Calorie Goal Challenge.  Your mission is to find the correct food or foods that complete a nutritionally balanced meal as close to the calorie goal as possible.  Use the in-game graph to get your meal as nutritionally close to goal as possible.  Good luck and make me proud!';
@@ -680,13 +685,14 @@ var gameManager = {
     //give the game mode and and the plate, did they pass?
     evaluatePlate: function() {
 
+
         if (this.gamemode) {
             var score = this.gamemode.scoreFunc();
             if (score >= SCORE_PASS_PERCENT) {
                 this.showLoadOutScreenWin();
             } else {
                 this.showLoadOutScreenFail();
-                
+
                 window.setTimeout(function() {
                     gameManager.showLoadInScreen();
                     currentPlate.clearPlate();
@@ -695,7 +701,7 @@ var gameManager = {
                     if (plateJSON)
                         currentPlate.loadPlate(plateJSON);
 
-                }, 7000)
+                }, 17000)
             }
         }
 

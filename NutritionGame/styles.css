@@ -230,5 +230,17 @@
 	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
 .loadscreenmessage {
-	line-height: 0.7em;
+	line-height: 1em;
+background: white;
+padding: .3em;
+border: 7px solid #222;
+border-radius: 10px;
+background: #fefcea;
+background: -moz-radial-gradient(center, ellipse cover, #fefcea 0%, #ede6bd 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#fefcea), color-stop(100%,#ede6bd));
+background: -webkit-radial-gradient(center, ellipse cover, #fefcea 0%,#ede6bd 100%);
+background: -o-radial-gradient(center, ellipse cover, #fefcea 0%,#ede6bd 100%);
+background: -ms-radial-gradient(center, ellipse cover, #fefcea 0%,#ede6bd 100%);
+background: radial-gradient(ellipse at center, #fefcea 0%,#ede6bd 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#ede6bd',GradientType=1 );
 }
