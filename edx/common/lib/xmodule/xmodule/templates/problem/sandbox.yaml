@@ -12,17 +12,7 @@ data: |
         par = json.loads(ans)
         
         answer = json.loads(par["answer"]);
-        fat = answer["fat"];
-        calories = answer["calories"];
-        protein = answer["protein"];
-        carbs = answer["carbs"];
-
-        totalGrams = carbs + fat + protein;
-        carbs_p = carbs / totalGrams;
-        fat_p = fat / totalGrams;
-        protein_p = protein / totalGrams;
-        
-        return (calories < 800 and calories > 500 and fat_p > .05 and fat_p < .25 and carbs_p > .3 and carbs_p < .5 and protein_p > .35 and protein_p < .55)
+        return answer;
 
       
        
@@ -115,7 +105,7 @@ data: |
           initial_state='{}'
           width="800"
           height="600"
-          html_file="http://ec2-54-88-206-34.compute-1.amazonaws.com:3000/adl/sandbox/akJpH8kSqyaXwLiB/"
+          html_file="http://ec2-54-88-206-34.compute-1.amazonaws.com:3000/adl/sandbox/Fr7zUN4vwmK3ToGB/"
           sop="false"/>
       </customresponse>
       </problem>
