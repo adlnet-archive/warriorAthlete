@@ -244,3 +244,11 @@ background: -ms-radial-gradient(center, ellipse cover, #fefcea 0%,#ede6bd 100%);
 background: radial-gradient(ellipse at center, #fefcea 0%,#ede6bd 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#ede6bd',GradientType=1 );
 }
+
+#theplate
+{
+	position: absolute;
+bottom: -2%;
+left: 31%;
+width: 40%;
+}
