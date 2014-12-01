@@ -1,4 +1,4 @@
-<problem display_name="Sandbox World" markdown="null">
+<problem display_name="Sandbox World FITB" markdown="null">
 <script type="loncapa/python">
 
 import json
@@ -7,17 +7,7 @@ def vglcfn(e, ans):
   par = json.loads(ans)
   
   answer = json.loads(par["answer"]);
-  fat = answer["fat"];
-  calories = answer["calories"];
-  protein = answer["protein"];
-  carbs = answer["carbs"];
-
-  totalGrams = carbs + fat + protein;
-  carbs_p = carbs / totalGrams;
-  fat_p = fat / totalGrams;
-  protein_p = protein / totalGrams;
-  
-  return (calories &lt; 800 and calories &gt; 500 and fat_p &gt; .05 and fat_p &lt; .25 and carbs_p &gt; .3 and carbs_p &lt; .5 and protein_p &gt; .35 and protein_p &lt; .55)
+  return answer;
 
 
  
@@ -47,10 +37,9 @@ $('iframe').mouseover(function()
             window.clearTimeout(_to);
             _to=null;
           }
-
+   else {
       _to = window.setTimeout(function(){
-
-
+          _to = null;
           $('iframe').css('position','fixed');
           $('iframe').css('z-index','1000000');
           $('iframe').css('box-shadow','0px 0px 180px gray');
@@ -64,10 +53,8 @@ $('iframe').mouseover(function()
             'left':'15%',
             'width':'70%',
             'height':'70%'});
-
-         
-
         },1500);
+   }
         
       
 });
@@ -77,8 +64,10 @@ $('iframe').mouseout(function()
           {
             window.clearTimeout(_to);
             _to=null;
-          }
+          } else
+          {
           _to = window.setTimeout(function(){
+          _to = null;
             $('iframe').animate({
             'top':otop,
             'left':oleft,
@@ -92,8 +81,10 @@ $('iframe').mouseout(function()
           $('iframe').css('z-index','');
           $('iframe').css('box-shadow','0px 0px 80px gray');
               });
+         
         
         },1500);
+        }
          
           
         
@@ -101,9 +92,9 @@ $('iframe').mouseout(function()
 
 </script> 
 <p>
-Complete the Nutrition Mission Game.
+Complete the Nutrition Mission Game. 
 </p>
 <customresponse cfn="vglcfn">
-  <jsinput gradefn="WebGLDemo.getGrade" get_statefn="WebGLDemo.getState" set_statefn="WebGLDemo.setState" initial_state="{}" width="800" height="600" html_file="http://ec2-54-173-64-18.compute-1.amazonaws.com:3000/adl/sandbox/akJpH8kSqyaXwLiB/" sop="false"/>
+  <jsinput gradefn="WebGLDemo.getGrade" get_statefn="WebGLDemo.getState" set_statefn="WebGLDemo.setState" initial_state="{}" width="800" height="600" html_file="http://ec2-54-173-64-18.compute-1.amazonaws.com:3000/adl/sandbox/Fr7zUN4vwmK3ToGB/?gamemode=GM_FITB&amp;#038;plate=Meal2.json" sop="false"/>
 </customresponse>
 </problem>
