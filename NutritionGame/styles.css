@@ -252,3 +252,79 @@ bottom: -2%;
 left: 31%;
 width: 40%;
 }
+
+@media (min-width: 400px)
+{
+
+	.loadscreenmessage {
+	font-size:.3em;
+	}
+	#gameGuiRoot, #tooltipRoot {
+	zoom: 40%;
+	}
+}
+
+@media (min-width: 600px)
+{
+
+	.loadscreenmessage {
+	font-size:.4em;
+	}
+	#gameGuiRoot {
+	zoom: 50%;
+	}
+
+	#tooltipRoot {
+	zoom: 65%;
+	}
+}
+
+@media (min-width: 800px)
+{
+
+	.loadscreenmessage {
+	font-size:.5em;
+	}
+	#gameGuiRoot {
+	zoom: 60%;
+	}
+
+	#tooltipRoot {
+	zoom: 80%;
+	}
+}
+
+@media (min-width: 1000px)
+{
+	.loadscreenmessage {
+	font-size:.6em;
+	}
+	#gameGuiRoot {
+	zoom: 75%;
+	}
+	
+}
+
+@media (min-width: 1200px)
+{
+	.loadscreenmessage {
+	font-size:.7em;
+	}
+
+	#gameGuiRoot {
+	zoom: 90%;
+	}
+	
+}
+
+@media (min-width: 1400px)
+{
+	.loadscreenmessage {
+	font-size:1em;
+	}
+
+	#gameGuiRoot {
+	zoom: 100%;
+	}
+	
+}

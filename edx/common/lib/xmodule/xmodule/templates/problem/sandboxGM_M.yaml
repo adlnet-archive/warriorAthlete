@@ -1,6 +1,6 @@
 ---
 metadata:
-    display_name: Sandbox World
+    display_name: Sandbox World Medium
     markdown: !!null
 data: |
       <problem display_name="Nutrition Mission">
@@ -42,10 +42,10 @@ data: |
                   window.clearTimeout(_to);
                   _to=null;
                 }
-
+          else{
             _to = window.setTimeout(function(){
 
-
+                _to = null;
                 $('iframe').css('position','fixed');
                 $('iframe').css('z-index','1000000');
                 $('iframe').css('box-shadow','0px 0px 180px gray');
@@ -63,6 +63,7 @@ data: |
                
 
               },1500);
+          }
               
             
       });
@@ -73,7 +74,9 @@ data: |
                   window.clearTimeout(_to);
                   _to=null;
                 }
+                else{
                 _to = window.setTimeout(function(){
+                  _to = null;
                   $('iframe').animate({
                   'top':otop,
                   'left':oleft,
@@ -89,6 +92,7 @@ data: |
                     });
               
               },1500);
+              }
                
                 
               
@@ -105,7 +109,7 @@ data: |
           initial_state='{}'
           width="800"
           height="600"
-          html_file="http://ec2-54-88-206-34.compute-1.amazonaws.com:3000/adl/sandbox/Fr7zUN4vwmK3ToGB/?gamemode=GM_M"
+          html_file="http://ec2-54-173-64-18.compute-1.amazonaws.com:3000/adl/sandbox/Fr7zUN4vwmK3ToGB/?gamemode=GM_M"
           sop="false"/>
       </customresponse>
       </problem>
