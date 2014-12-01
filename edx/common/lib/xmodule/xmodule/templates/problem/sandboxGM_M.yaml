@@ -105,7 +105,7 @@ data: |
           initial_state='{}'
           width="800"
           height="600"
-          html_file="http://ec2-54-88-206-34.compute-1.amazonaws.com:3000/adl/sandbox/Fr7zUN4vwmK3ToGB/?gamemode=GM_M"
+          html_file="http://ec2-54-173-64-18.compute-1.amazonaws.com:3000/adl/sandbox/Fr7zUN4vwmK3ToGB/?gamemode=GM_M"
           sop="false"/>
       </customresponse>
       </problem>
