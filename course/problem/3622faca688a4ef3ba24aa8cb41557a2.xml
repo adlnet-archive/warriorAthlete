@@ -1,5 +1,5 @@
 <problem display_name="Sandbox World Medium" markdown="null">
-<script type="loncapa/python">
+  <script type="loncapa/python">
 
 import json
 def vglcfn(e, ans):
@@ -13,7 +13,7 @@ def vglcfn(e, ans):
  
 
 </script>
-<script type="text/javascript">
+  <script type="text/javascript">
 
 $('iframe').css('height','500');
 $('iframe').css('width','700');
@@ -93,11 +93,11 @@ $('iframe').mouseout(function()
         
 });
 
-</script> 
-<p>
+</script>
+  <p>
 Complete the Nutrition Mission Game.
 </p>
-<customresponse cfn="vglcfn">
-  <jsinput gradefn="WebGLDemo.getGrade" get_statefn="WebGLDemo.getState" set_statefn="WebGLDemo.setState" initial_state="{}" width="800" height="600" html_file="http://ec2-54-173-64-18.compute-1.amazonaws.com:3000/adl/sandbox/Fr7zUN4vwmK3ToGB/?gamemode=GM_M" sop="false"/>
-</customresponse>
+  <customresponse cfn="vglcfn">
+    <jsinput gradefn="WebGLDemo.getGrade" get_statefn="WebGLDemo.getState" set_statefn="WebGLDemo.setState" initial_state="{}" width="800" height="600" html_file="http://ec2-54-173-64-18.compute-1.amazonaws.com:3000/adl/sandbox/Fr7zUN4vwmK3ToGB/?gamemode=GM_M" sop="false"/>
+  </customresponse>
 </problem>
